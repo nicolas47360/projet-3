@@ -1,4 +1,47 @@
-p
+
+@media (max-width:480px) {
+
+
+header h1
 {
-  fdgfd  
+  font-style: italic;
+}
+
+/* location */
+#location
+{
+  background-color: #9356DC;
+  display: flex;
+  justify-content: center;
+}
+
+/* reserve */
+#reserve
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#reserve h2
+{
+  display: flex;
+  justify-content: center;
+}
+
+#reserve p
+{
+  display: flex;
+  justify-content: center;
+}
+
+/* function */
+
+/* restaurant */
+
+#restaurant
+{
+  display: flex;
+  flex-direction: column;
+}
 }
