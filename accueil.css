@@ -1,47 +1,206 @@
 
 @media (max-width:480px) {
 
-
-header h1
+body
 {
-  font-style: italic;
+ margin:0;
+
 }
+
+h1
+{
+  display: flex;
+  justify-content: center;
+}
+
+#logo
+{    
+  width: 250px;
+}
+
 
 /* location */
 #location
-{
-  background-color: #9356DC;
-  display: flex;
+{  
+  display: flex;  
+  align-items: center;
   justify-content: center;
+  background-color: #; 
+}
+
+.fa-map-marker-alt
+{
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  padding-right: 20px; 
 }
 
 /* reserve */
 #reserve
 {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  padding: 0 40px 0 40px;
+  align-items: center;
+  background-color: #99E2D0;
+  justify-content: center;
 }
 
 #reserve h2
 {
-  display: flex;
-  justify-content: center;
+  display: flex; 
+  margin: 40px 10px 10px 10px;  
+  border: none;  
 }
 
 #reserve p
 {
   display: flex;
-  justify-content: center;
 }
 
+#reserve button
+{
+  border-radius: 40px;
+  width: 220px;
+  background-color: #FF79DA;
+  border-style: none;  
+  color: white;
+  font-size: 15px;
+  height: 40px;
+  margin: 10px 0 50px 0;
+}
 /* function */
 
+#function
+{
+  display: flex;
+  flex-direction: column; 
+}
+
+#title-function
+{
+  margin: 40px 0 20px 20px;
+}
+
+.choice
+{
+  border-radius: 10px;
+  background-color: #99E2D0;
+  margin: 10px 40px 10px 40px;
+  display: flex;
+  justify-content: flex-start;  
+  height: 55px;
+}
+
+.number
+{
+  background-color: #FF79DA;
+  border-radius: 40px;
+  width: 25px;
+  height: 25px;
+  margin:15px 10px 0 -10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+
+.fa-mobile-alt
+{
+  display: flex;
+  align-items: center;
+  margin: 0 40px 0 10px;
+}
+
+.fa-list-ul
+{
+  display: flex;
+  align-items: center;
+  margin: 0 40px 0 10px;
+}
+
+.fa-store
+{
+  display: flex;
+  align-items: center;
+  margin: 0 40px 0 10px;
+  color: #FF79DA;
+}
+
+.function-text
+{
+  display: flex;
+  align-items: center;
+}
 /* restaurant */
 
 #restaurant
 {
   display: flex;
   flex-direction: column;
+  background-color: #99E2D0;
+  margin: 60px 0 0 0 ;
+}
+
+#restaurant h2
+{
+  margin: 40px 0 10px 20px;
+}
+
+.visual
+{
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  background-color: white; 
+  margin: 10px 20px 10px 20px;
+}
+
+.food-picture
+{
+  object-fit: contain;
+  border-radius: 20px 20px 0 0 ;
+}
+
+.contener
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.info
+{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.fa-heart
+{
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  margin: 0 40px 0 0;
+  
+}
+
+
+.detail
+{
+  display: flex;  
+  flex-direction: column;
+  margin: 0 0 0 20px;  
+}
+
+.detail h3
+{
+ margin: 20px 0 0 0;
+}
+
+.detail p
+{
+  margin: 5px 0 20px 0;
 }
 }
