@@ -6,6 +6,17 @@ body
  margin:0;
 }
 
+a:link
+{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover .fa-heart
+{
+  color: #FF79DA;
+}
+
 h1
 {
   display: flex;
@@ -162,8 +173,9 @@ h1
 
 .food-picture
 {
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 20px 20px 0 0 ;
+ height: 250px;
 }
 
 .contener
@@ -230,6 +242,7 @@ ul
 li
 {
   color: white;
+  margin: 10px 0 0 0;
 }
 
 .fa-utensils
