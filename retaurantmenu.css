@@ -5,6 +5,11 @@ body
   margin:0;
 }
 
+#logo, h1, h2, h3
+{
+  font-family: 'Shrikhand', sans-serif;
+}
+
 a:link
 {
   color: black;
@@ -96,6 +101,9 @@ header h1
   color: grey;
   margin: 40px 0 10px 20px ;
   font-size: 18px;
+  border-bottom-style: underline #99E2D0;
+  border-top: 10px;
+ 
   
 }
 

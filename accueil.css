@@ -4,6 +4,7 @@
 body
 {
  margin:0;
+ font-family: 'Roboto', sans-serif;
 }
 
 a:link
@@ -21,7 +22,10 @@ a:hover .solid-heart
   margin: 0 40px 0 0;  
 }
 
-
+#logo, h1, h2, h3
+{
+  font-family: 'Shrikhand', sans-serif;
+}
 
 h1
 {
