@@ -17,7 +17,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 60px;
+    height: 75px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -25,21 +25,14 @@
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .header-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .fa-arrow-left {
-    padding-left: 20px;
+  header .fa-arrow-left {
+    padding: 0 0 10px 20px;
     color: grey;
+    font-size: 25px;
   }
-  #logo {
+  header #header__logo {
     height: 35px;
-    padding-left: 80px;
+    padding: 10px 0 0 80px;
   }
   /* picture */
   #picture {
@@ -51,7 +44,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .picture__position {
+  #picture__position {
     -o-object-fit: cover;
        object-fit: cover;
     height: 280px;
@@ -72,6 +65,46 @@
     top: -35px;
     position: relative;
   }
+  #contener h2 {
+    color: grey;
+    margin: 40px 0 10px 20px;
+    font-size: 18px;
+    -webkit-text-decoration: #b0e7b0 underline 4px;
+            text-decoration: #b0e7b0 underline 4px;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+  }
+  #contener .food {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-radius: 20px;
+    background-color: white;
+    margin: 15px 20px 0 20px;
+  }
+  #contener .menu {
+    margin: 0 0 0 10px;
+  }
+  #contener .menu .h3 {
+    margin: 15px 0 0 0;
+  }
+  #contener .menu .p {
+    margin: 8px 0 15px 0;
+    color: grey;
+  }
+  #contener .price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin: 0 20px 15px 0;
+    font-weight: bold;
+  }
   #presentation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -90,46 +123,6 @@
     margin: 40px 40px 0 0;
     font-size: 30px;
     color: grey;
-  }
-  #contener h2 {
-    color: grey;
-    margin: 40px 0 10px 20px;
-    font-size: 18px;
-    -webkit-text-decoration: #b0e7b0 underline 4px;
-            text-decoration: #b0e7b0 underline 4px;
-    text-underline-offset: 8px;
-    text-decoration-thickness: 2px;
-  }
-  .food {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    border-radius: 20px;
-    background-color: white;
-    margin: 15px 20px 0 20px;
-  }
-  .menu {
-    margin: 0 0 0 10px;
-  }
-  .menu .h3 {
-    margin: 15px 0 0 0;
-  }
-  .menu .p {
-    margin: 8px 0 15px 0;
-    color: grey;
-  }
-  .price {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    margin: 0 20px 15px 0;
-    font-weight: bold;
   }
   .pay {
     display: -webkit-box;
