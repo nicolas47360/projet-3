@@ -1,0 +1,20 @@
+{
+  "name": "projet-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/accueil.scss:.css/style/accueil.css, sass --watch ./sass/menu.scss:.css/style/menu.css sass "
+        
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolas47360/projet-3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolas47360/projet-3/issues"
+  },
+  "homepage": "https://github.com/nicolas47360/projet-3#readme"
+}

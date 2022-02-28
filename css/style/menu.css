@@ -1,0 +1,201 @@
+@media (max-width: 740px) {
+  body {
+    margin: 0;
+  }
+  #logo, h1, h2, h3 {
+    font-family: 'Shrikhand', sans-serif;
+  }
+  a:link {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover .fa-heart {
+    color: #FF79DA;
+  }
+  /* header */
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 60px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .header-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .fa-arrow-left {
+    padding-left: 20px;
+    color: grey;
+  }
+  #logo {
+    height: 35px;
+    padding-left: 80px;
+  }
+  /* picture */
+  #picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .picture__position {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 280px;
+    position: relative;
+  }
+  /* contener */
+  #contener {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 40px 40px 0 0;
+    background-color: #ECE9F9;
+    z-index: 0;
+    top: -35px;
+    position: relative;
+  }
+  #presentation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #presentation h1 {
+    margin: 40px 0 0 20px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 28px;
+  }
+  .fa-heart {
+    margin: 40px 40px 0 0;
+    font-size: 30px;
+    color: grey;
+  }
+  #contener h2 {
+    color: grey;
+    margin: 40px 0 10px 20px;
+    font-size: 18px;
+    -webkit-text-decoration: #b0e7b0 underline 4px;
+            text-decoration: #b0e7b0 underline 4px;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+  }
+  .food {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-radius: 20px;
+    background-color: white;
+    margin: 15px 20px 0 20px;
+  }
+  .menu {
+    margin: 0 0 0 10px;
+  }
+  .menu .h3 {
+    margin: 15px 0 0 0;
+  }
+  .menu .p {
+    margin: 8px 0 15px 0;
+    color: grey;
+  }
+  .price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin: 0 20px 15px 0;
+    font-weight: bold;
+  }
+  .pay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .pay .a {
+    background-color: #b0e7b0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70px;
+    border-radius: 0 20px 20px 0;
+  }
+  .fa-check {
+    width: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #b0e7b0;
+    background-color: white;
+    border-radius: 40px;
+    height: 30px;
+    width: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 18px;
+  }
+  button {
+    color: white;
+    background-color: #FF79DA;
+    border-radius: 40px;
+    font-size: 15px;
+    height: 40px;
+    margin: 40px 140px 60px 140px;
+  }
+  /* footer */
+  footer {
+    background-color: #3b3b3b;
+    margin: 0;
+  }
+  footer h2 {
+    padding: 20px 0 20px 20px;
+    color: white;
+    font-style: italic;
+    margin: 0;
+  }
+  ul {
+    padding: 0 0 60px 20px;
+    list-style-type: none;
+  }
+  ul li {
+    color: white;
+    margin: 10px 0 0 0;
+  }
+  .fa-utensils.fa-handshake-angle {
+    padding: 0 15px 0 0;
+  }
+}
+/*# sourceMappingURL=menu.css.map */
