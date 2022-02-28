@@ -26,13 +26,13 @@
             justify-content: flex-start;
   }
   header .fa-arrow-left {
-    padding: 0 0 10px 20px;
+    padding: 0 0 0 20px;
     color: grey;
     font-size: 25px;
   }
   header #header__logo {
     height: 35px;
-    padding: 10px 0 0 80px;
+    padding: 0 0 0 80px;
   }
   /* picture */
   #picture {
@@ -64,6 +64,12 @@
     z-index: 0;
     top: -35px;
     position: relative;
+  }
+  #contener__title {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   #contener h2 {
     color: grey;
