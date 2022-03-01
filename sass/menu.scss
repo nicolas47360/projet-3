@@ -67,11 +67,30 @@ header
   z-index: 0;
   top: -35px;
   position:relative;
-    &__title
+    &__header
     {
+      display: flex;
       flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
     }
-    
+
+    h1
+    {
+      padding-left: 40px;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 28px;
+    }
+
+    .fa-heart
+    {     
+      font-size: 30px;
+      color: grey;
+      padding-right: 40px;
+    }
+
     h2{
     color: grey;
     margin: 40px 0 10px 20px ;
@@ -80,6 +99,7 @@ header
     text-underline-offset: 8px;
     text-decoration-thickness: 2px;      
   }
+
   .food
   {
     display: flex;
@@ -88,6 +108,7 @@ header
     background-color: white;
     margin: 15px 20px 0 20px;
   } 
+
   .menu
   {
     margin: 0 0 0 10px;
@@ -101,44 +122,15 @@ header
       color: grey;
       }    
   }
+
   .price
-{
-  display: flex;
-  align-items: flex-end;
-  margin: 0 20px 15px 0;
-  font-weight: bold;
+  {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 20px 15px 0;
+    font-weight: bold;
+  }
 }
-}
-
-#presentation
-{
-  display: flex;
-  justify-content: space-between;
-}
-
-#presentation h1
-{
-  margin: 40px 0 0 20px;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 28px;
-}
-
-.fa-heart
-{
-  margin: 40px 40px 0 0;
-  font-size: 30px;
-  color: grey;
-}
-
-
-
-
-
-
-
-
-
 
 .pay
 {
