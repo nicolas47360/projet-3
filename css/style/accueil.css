@@ -619,10 +619,14 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 150px;
   }
   h1 #logo {
     width: 550px;
+    height: 80%;
   }
   /* location */
   #location {
@@ -636,13 +640,13 @@
         -ms-flex-pack: center;
             justify-content: center;
     background-color: #cccccc;
-    height: 90px;
+    height: 150px;
   }
   #location .fa-map-marker-alt {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 30px;
+    font-size: 43px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -653,7 +657,7 @@
   }
   #location p {
     padding-top: 5px;
-    font-size: 25px;
+    font-size: 35px;
   }
   /* reserve */
   #reserve {
@@ -673,6 +677,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     height: 350px;
+    margin-bottom: 80px;
   }
   #reserve h2 {
     margin: 20px 10px 10px 10px;
@@ -713,7 +718,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 40px 0 40px 0;
+    margin: 40px 0 80px 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -725,9 +730,10 @@
     width: 100%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding-bottom: 40px;
   }
   #function__title {
-    margin: 20px 0 20px 20px;
+    margin: 20px 0 70px 20px;
     font-size: 35px;
   }
   #function .choice {
@@ -813,14 +819,14 @@
     padding: 0 0 70px 0;
   }
   #restaurant h2 {
-    margin: 40px 0 50px 20px;
+    margin: 40px 0 50px 90px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 35px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    font-size: 45px;
   }
   #restaurant__contener {
     display: -webkit-box;
@@ -841,7 +847,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: white;
-    margin: 10px 20px 10px 20px;
+    margin: 10px 20px 50px 20px;
     color: black;
     text-decoration: none;
     -ms-flex-pack: distribute;
@@ -862,6 +868,7 @@
     padding: 8px 15px 8px 15px;
     color: #25997c;
     font-weight: bold;
+    margin: 0 0 80px 20px;
   }
   #restaurant__contener .visual__contener {
     display: -webkit-box;
@@ -922,9 +929,10 @@
   footer {
     background-color: #3b3b3b;
     margin: 0;
+    padding: 40px 0 40px 0;
   }
   footer h2 {
-    padding: 20px 0 20px 20px;
+    padding: 20px 0 40px 20px;
     color: white;
     font-style: italic;
     margin: 0;
