@@ -1,3 +1,11 @@
+@keyframes menu {
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}
 @media (max-width: 480px) {
 
 body
@@ -109,6 +117,8 @@ header
     flex-direction: column;
     width: 100%;
     background-color: #ECE9F9;
+    
+
     &__style
       {
         display: flex;
@@ -129,12 +139,28 @@ header
       justify-content: space-between;
       border-radius: 20px;
       background-color: white;
-      margin: 15px 10px 0 10px;
-      
-      .menu
+      margin: 15px 10px 0 10px;      
+            
+      .menu1     
       {
         width: 85%;
         margin: 0 0 0 10px;
+        animation: 0.6s ease-in-out menu;
+        h3
+          {
+          margin: 15px 0 0 0;
+          }    
+        p
+        {
+        margin: 8px 0 15px 0;
+        color: grey;
+        }
+      }
+      .menu2     
+      {
+        width: 85%;
+        margin: 0 0 0 10px;
+        animation: 0.6s ease-in-out 0.2s menu;
         h3
           {
           margin: 15px 0 0 0;
@@ -144,6 +170,21 @@ header
         margin: 8px 0 15px 0;
         color: grey;
         } 
+      }
+      .menu3     
+      {
+        width: 85%;
+        margin: 0 0 0 10px;
+        animation: 0.6s ease-in-out 0.4s menu;
+        h3
+          {
+          margin: 15px 0 0 0;
+          }    
+        p
+        {
+        margin: 8px 0 15px 0;
+        color: grey;
+        }  
       }
     }
     .pay

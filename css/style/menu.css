@@ -1,3 +1,25 @@
+@-webkit-keyframes menu {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes menu {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 @media (max-width: 480px) {
   body {
     margin: 0;
@@ -139,14 +161,42 @@
     background-color: white;
     margin: 15px 10px 0 10px;
   }
-  #presentation .card .food .menu {
+  #presentation .card .food .menu1 {
     width: 85%;
     margin: 0 0 0 10px;
+    -webkit-animation: 0.6s ease-in-out menu;
+            animation: 0.6s ease-in-out menu;
   }
-  #presentation .card .food .menu h3 {
+  #presentation .card .food .menu1 h3 {
     margin: 15px 0 0 0;
   }
-  #presentation .card .food .menu p {
+  #presentation .card .food .menu1 p {
+    margin: 8px 0 15px 0;
+    color: grey;
+  }
+  #presentation .card .food .menu2 {
+    width: 85%;
+    margin: 0 0 0 10px;
+    -webkit-animation: 0.6s ease-in-out 0.2s menu;
+            animation: 0.6s ease-in-out 0.2s menu;
+  }
+  #presentation .card .food .menu2 h3 {
+    margin: 15px 0 0 0;
+  }
+  #presentation .card .food .menu2 p {
+    margin: 8px 0 15px 0;
+    color: grey;
+  }
+  #presentation .card .food .menu3 {
+    width: 85%;
+    margin: 0 0 0 10px;
+    -webkit-animation: 0.6s ease-in-out 0.4s menu;
+            animation: 0.6s ease-in-out 0.4s menu;
+  }
+  #presentation .card .food .menu3 h3 {
+    margin: 15px 0 0 0;
+  }
+  #presentation .card .food .menu3 p {
     margin: 8px 0 15px 0;
     color: grey;
   }
