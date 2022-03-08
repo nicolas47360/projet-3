@@ -260,6 +260,268 @@
   }
 }
 
+@media (max-width: 992px) {
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  #logo, h1, h2, h3 {
+    font-family: 'Shrikhand', sans-serif;
+  }
+  a:link {
+    color: black;
+    text-decoration: none;
+  }
+  /* header */
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 75px;
+  }
+  header h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header h1 .fa-arrow-left {
+    padding: 0 0 0 20px;
+    color: grey;
+    font-size: 25px;
+  }
+  header h1 #header__logo {
+    height: 35px;
+    padding: 0 0 0 70px;
+  }
+  /* picture */
+  /* contener */
+  #presentation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  #presentation #contener {
+    width: 100%;
+  }
+  #presentation #contener__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #presentation #contener__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #ECE9F9;
+    border-radius: 40px 40px 0 0;
+    margin-top: -35px;
+  }
+  #presentation #contener #picture__position {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 250px;
+    width: 100%;
+  }
+  #presentation #contener h1 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 20px;
+  }
+  #presentation #contener .fa-heart {
+    font-size: 30px;
+    color: grey;
+    padding-right: 40px;
+    -webkit-transform: color;
+            transform: color;
+  }
+  #presentation #contener .fa-heart:active {
+    color: #FF79DA;
+    -webkit-transition: -webkit-transform 2000ms ease-out;
+    transition: -webkit-transform 2000ms ease-out;
+    transition: transform 2000ms ease-out;
+    transition: transform 2000ms ease-out, -webkit-transform 2000ms ease-out;
+  }
+  #presentation .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    background-color: #ECE9F9;
+  }
+  #presentation .card__style {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #presentation .card h2 {
+    color: grey;
+    margin: 40px 0 10px 20px;
+    font-size: 18px;
+    -webkit-text-decoration: #b0e7b0 underline 4px;
+            text-decoration: #b0e7b0 underline 4px;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+  }
+  #presentation .card .food {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-radius: 20px;
+    background-color: white;
+    margin: 15px 10px 0 10px;
+  }
+  #presentation .card .food .menu {
+    width: 85%;
+    margin: 0 0 0 10px;
+  }
+  #presentation .card .food .menu h3 {
+    margin: 15px 0 0 0;
+  }
+  #presentation .card .food .menu p {
+    margin: 8px 0 15px 0;
+    color: grey;
+  }
+  #presentation .card .pay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #presentation .card .pay__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin: 0 20px 15px 0;
+    font-weight: bold;
+  }
+  #presentation .card .pay__link {
+    background-color: #b0e7b0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70px;
+    border-radius: 0 20px 20px 0;
+    visibility: hidden;
+  }
+  #presentation .card .pay .fa-check {
+    width: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #b0e7b0;
+    background-color: white;
+    border-radius: 40px;
+    height: 30px;
+    width: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 18px;
+    visibility: hidden;
+  }
+  #presentation #selection {
+    width: 100%;
+    background-color: #ECE9F9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #presentation #selection button {
+    color: white;
+    background: linear-gradient(170deg, #FF79DA, #9356DC);
+    border-radius: 40px;
+    font-size: 15px;
+    margin: 40px 0 70px 0;
+    background-color: #ECE9F9;
+    border-style: none;
+    height: 40px;
+    width: 40%;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+    -webkit-box-shadow: 5px 5px 5px  grey;
+            box-shadow: 5px 5px 5px  grey;
+  }
+  #presentation #selection button:hover {
+    opacity: 0.70;
+    -webkit-box-shadow: 5px 5px 5px #111111;
+            box-shadow: 5px 5px 5px #111111;
+  }
+  /* footer */
+  footer {
+    background-color: #3b3b3b;
+    width: 100%;
+    margin: 0;
+  }
+  footer h2 {
+    padding: 20px 0 20px 20px;
+    color: white;
+    font-style: italic;
+    margin: 0;
+  }
+  footer ul {
+    padding: 0 0 60px 20px;
+    list-style-type: none;
+    margin: 0;
+  }
+  footer ul li {
+    color: white;
+    margin: 10px 0 0 0;
+  }
+  footer ul .fa-utensils.fa-handshake-angle {
+    padding: 0 15px 0 0;
+  }
+}
+
 @media (min-width: 992px) {
   body {
     margin: 0;
