@@ -1,3 +1,6 @@
+@import "./utils/_mixin" ;
+@import "./utils/_variables" ;
+
 @keyframes menu {
   from{
     transform: scale(0);
@@ -21,7 +24,7 @@ body
 
 a:link
 {
-  color: black;
+  color: $color-link;
   text-decoration: none;
 }
 
@@ -39,7 +42,7 @@ header
     .fa-arrow-left
     {
       padding: 0 0 0 20px;
-      color: grey;
+      color: $color-text;
       font-size: 25px;  
     }  
     #header__logo
@@ -249,7 +252,7 @@ header
       &:hover
       {
         opacity: 0.70;
-        box-shadow: 5px 5px 5px rgb(17, 17, 17) ; ;
+        box-shadow: 5px 5px 5px rgb(17, 17, 17) ; 
       }
     }
   }
@@ -654,16 +657,13 @@ footer
       display: flex;
       flex-direction:row;
       justify-content: space-around;
-      width: 85%;      
-      
-
+      width: 85%;
       &__style
       {
         display: flex;
         flex-direction: column;        
         width: 40%;
-            } 
-        
+            }         
       h2
       {
       color: grey;
@@ -680,8 +680,35 @@ footer
         border-radius: 20px;
         background-color: white;
         margin: 15px 20px 0 20px;
-        .menu
-        {
+        .menu1
+        { animation: 0.6s ease-in-out menu;
+          margin: 0 0 0 10px;
+          h3
+            {
+            margin: 15px 0 0 0;
+            }    
+          p
+          {
+          margin: 8px 0 15px 0;
+          color: grey;
+          }
+        }
+        .menu2
+        { animation: 0.6s ease-in-out 0.2s menu;
+          margin: 0 0 0 10px;
+          h3
+            {
+            margin: 15px 0 0 0;
+            }    
+          p
+          {
+          margin: 8px 0 15px 0;
+          color: grey;
+          }  
+        }
+        .menu3
+        { animation: 0.6s ease-in-out 0.4s menu;
+
           margin: 0 0 0 10px;
           h3
             {
@@ -692,7 +719,6 @@ footer
           margin: 8px 0 15px 0;
           color: grey;
           } 
-        }
       }
       .pay
       {
@@ -712,11 +738,11 @@ footer
           align-items: center;
           width: 70px;
           border-radius: 0 20px 20px 0;
-          visibility: hidden;
+          
         }
         .fa-check 
         {
-          width: 50px;
+          width: 42px;
           display: flex;
           font-size: 15px;
           font-weight: bold;
@@ -724,16 +750,16 @@ footer
           color: rgb(176, 231, 176);
           background-color: white;
           border-radius: 40px;
-          height: 30px;
-          width: 30px;
+          height: 42px;
+          
           align-items: center;
           margin: 18px;
-          visibility: hidden;        
+                
         }
         
       }
       }    
-        
+    }
     button
     {
       color: white;

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/accueil.scss:.css/style/accueil.css, sass --watch ./sass/menu.scss:.css/style/menu.css sass "
+    "sass": "sass --watch ./sass/accueil.scss:.css/style/accueil.css, sass --watch ./sass/menu.scss:.css/style/menu.css"
         
   },
   "repository": {

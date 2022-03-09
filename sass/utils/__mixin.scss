@@ -1,0 +1,59 @@
+@mixin flexcentercenter {
+    display: flex;  
+    align-items: center;
+    justify-content: center;    
+}
+
+@mixin button($fov) {
+    border-radius: 40px;
+    width: $fov;
+    background: linear-gradient(170deg, #FF79DA, #9356DC);
+    border-style: none;  
+    color: white;
+    font-size: 25px;
+    height: 70px;
+    margin: 50px 0 50px 0;
+    transition: all 400ms;
+    box-shadow: 5px 5px 5px  grey;
+    cursor: pointer;
+    &:hover
+    {
+    opacity: 0.70;
+    @include box(rgb(17, 17, 17));
+    }    
+}
+
+@mixin box ($color){
+    box-shadow: 5px 5px 5px $color;  
+}
+
+@mixin icone {
+    display: flex;
+    align-items: center;
+    margin: 0 30px 0 10px;
+    color: gray;
+    font-size: 25px;        
+}
+
+@mixin icone-mobile {
+    margin: 0 40px 0 10px;    
+}
+
+@mixin icone-footer {
+    padding: 0 15px 0 0;
+    
+}
+
+@mixin menu {
+    width: 85%;
+        margin: 0 0 0 10px;        
+        h3
+          {
+          margin: 15px 0 0 0;
+          }    
+        p
+        {
+        margin: 8px 0 15px 0;
+        color: grey;
+        } 
+}
