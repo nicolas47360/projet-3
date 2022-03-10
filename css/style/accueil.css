@@ -235,10 +235,16 @@ h1 #logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  border: none;
+  width: 85%;
   height: 55px;
+  cursor: pointer;
   -webkit-box-shadow: 5px 5px 5px grey;
           box-shadow: 5px 5px 5px grey;
 }
@@ -254,12 +260,16 @@ h1 #logo {
   }
 }
 
+#function .choice:hover {
+  background-color: #f6d8ee;
+}
+
 #function .choice__number {
   background-color: #9356DC;
   border-radius: 40px;
   width: 25px;
   height: 25px;
-  margin: 15px 10px 0 -10px;
+  margin: 0 10px 0 -15px;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,9 +284,10 @@ h1 #logo {
 
 @media (min-width: 992px) {
   #function .choice__number {
-    width: 45px;
-    height: 45px;
-    margin: 15px 10px 0 -15px;
+    width: 55px;
+    height: 55px;
+    margin: 0 10px 0 -25px;
+    font-size: 20px;
   }
 }
 
@@ -306,6 +317,13 @@ h1 #logo {
   margin: 0 30px 0 10px;
   color: gray;
   font-size: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#function .choice .fa-mobile-alt:hover {
+  color: #9356DC;
 }
 
 @media (min-width: 992px) {
@@ -325,6 +343,13 @@ h1 #logo {
   margin: 0 30px 0 10px;
   color: gray;
   font-size: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#function .choice .fa-list-ul:hover {
+  color: #9356DC;
 }
 
 @media (min-width: 992px) {
@@ -344,6 +369,12 @@ h1 #logo {
   margin: 0 30px 0 10px;
   color: gray;
   font-size: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#function .choice .fa-store:hover {
   color: #9356DC;
 }
 
@@ -560,6 +591,18 @@ footer ul {
   padding: 0 0 60px 20px;
   list-style-type: none;
   margin: 0;
+}
+
+@media (min-width: 992px) {
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 30px;
+    padding: 20px 0 40px 20px;
+  }
 }
 
 footer ul li {

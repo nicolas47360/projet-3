@@ -54,7 +54,6 @@ h1
   } 
 }
 
-
 /* reserve */
 #reserve
 {
@@ -100,7 +99,6 @@ h1
 }   
 
 /* function */
-
 #function
 {
   display: flex;
@@ -132,8 +130,12 @@ h1
     background-color: $background;
     margin: 10px 40px 20px 40px;
     display: flex;
-    justify-content: flex-start;  
+    align-items: center;
+    justify-content: flex-start;
+    border: none;
+    width: 85%;  
     height: 55px;
+    cursor: pointer;    
     @include box($color-text);
     @media (min-width:992px){
       margin: 10px 20px 10px 20px;
@@ -141,19 +143,24 @@ h1
       width: 30%;     
       height: 75px;
     }
+    &:hover
+    {      
+      background-color: #f6d8ee;      
+    }
     &__number
     {
       background-color: $color-primary;
       border-radius: 40px;
       width: 25px;
       height: 25px;
-      margin:15px 10px 0 -10px;
+      margin:0 10px 0 -15px;
       color: $color-li;
       @include flexcentercenter;
       @media (min-width:992px){
-        width: 45px;
-        height: 45px;
-        margin:15px 10px 0 -15px;
+        width: 55px;
+        height: 55px;
+        margin:0 10px 0 -25px;
+        font-size: 20px;
       }
     }
     &__text
@@ -168,6 +175,9 @@ h1
     .fa-mobile-alt
     {
       @include icone;
+      &:hover{
+        color: #9356DC;
+      }
       @media (min-width:992px){
         margin: 0 60px 0 30px;
         font-size: 35px;
@@ -177,6 +187,9 @@ h1
     .fa-list-ul
     {
       @include icone;
+      &:hover{
+        color: #9356DC;
+      }
       @media (min-width:992px){
         margin: 0 60px 0 30px;
         font-size: 35px;
@@ -186,7 +199,9 @@ h1
     .fa-store
     {
       @include icone;
-      color: #9356DC;
+      &:hover{
+        color: #9356DC;
+         }      
       @media (min-width:992px){
         margin: 0 60px 0 30px;
         font-size: 35px;
@@ -196,7 +211,6 @@ h1
 }
 
 /* restaurant */
-
 #restaurant
 {
   display: flex;
@@ -314,10 +328,6 @@ h1
   }
 }
 
-
-
-
-
 /* footer */
 footer
 {
@@ -344,6 +354,12 @@ footer
     padding: 0 0 60px 20px;
     list-style-type: none;
     margin: 0;
+    @media (min-width:992px){
+      display: flex;
+      justify-content: space-around;
+      font-size: 30px;
+      padding: 20px 0 40px 20px;
+    }
     li
     {
       color: white;
@@ -363,5 +379,4 @@ footer
       @include icone-footer;
     }
   }  
-} 
-
+}
