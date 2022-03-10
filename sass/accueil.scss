@@ -252,7 +252,7 @@ h1
     display: flex;
     border-radius: 20px;
     flex-direction: column;
-    background-color: white; 
+    background-color: $color-li; 
     margin: 10px 20px 30px 20px;
     color: black;
     text-decoration: none;
@@ -273,13 +273,15 @@ h1
     {
       z-index: 0;
       position: absolute;
-      background-color: $color-tertiary;
-      right: 40px;
+      background-color: $color-tertiary;      
       padding: 8px 15px 8px 15px;
       color: #25997c;
       font-weight: bold;
+      @media (max-width:992px){
+        right: 40px;
+      }
       @media (min-width:992px){
-        right: 0px;
+        margin: 0 0 80px 100px;
       }
     }
     &__contener
@@ -315,12 +317,8 @@ h1
       width: 80px;
       height: 60px;
       position: relative;
-      background-color: $color-li;      
-      @media (min-width:992px){
-        height: 100%;
-        border-radius: 0 0 20px 0;
-      }     
-      &:active
+      background-color: $color-li;
+      &:hover
       {
         content: '';
         color: #9356DC;          
@@ -330,7 +328,12 @@ h1
         height: 100%;
         background-color: #9356DC;
         transition: all .5s;       
-      }      
+      }            
+      @media (min-width:992px){
+        height: 100%;
+        border-radius: 0 0 20px 0;
+      }     
+      
     }  
   }
 }

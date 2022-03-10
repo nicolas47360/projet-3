@@ -483,15 +483,20 @@ h1 #logo {
   z-index: 0;
   position: absolute;
   background-color: #99E2D0;
-  right: 40px;
   padding: 8px 15px 8px 15px;
   color: #25997c;
   font-weight: bold;
 }
 
+@media (max-width: 992px) {
+  #restaurant .visual__text {
+    right: 40px;
+  }
+}
+
 @media (min-width: 992px) {
   #restaurant .visual__text {
-    right: 0px;
+    margin: 0 0 80px 100px;
   }
 }
 
@@ -552,14 +557,7 @@ h1 #logo {
   background-color: white;
 }
 
-@media (min-width: 992px) {
-  #restaurant .visual .fa-heart {
-    height: 100%;
-    border-radius: 0 0 20px 0;
-  }
-}
-
-#restaurant .visual .fa-heart:active {
+#restaurant .visual .fa-heart:hover {
   content: '';
   color: #9356DC;
   position: absolute;
@@ -569,6 +567,13 @@ h1 #logo {
   background-color: #9356DC;
   -webkit-transition: all .5s;
   transition: all .5s;
+}
+
+@media (min-width: 992px) {
+  #restaurant .visual .fa-heart {
+    height: 100%;
+    border-radius: 0 0 20px 0;
+  }
 }
 
 /* footer */
