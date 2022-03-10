@@ -137,24 +137,22 @@ h1 #logo {
 
 #reserve button {
   border-radius: 40px;
-  width: 260px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
-  border-style: none;
+  border: none;
   color: white;
-  font-size: 25px;
-  height: 70px;
+  width: 270px;
+  font-size: 18px;
+  height: 45px;
   margin: 50px 0 50px 0;
   -webkit-transition: all 400ms;
   transition: all 400ms;
-  -webkit-box-shadow: 5px 5px 5px  grey;
-          box-shadow: 5px 5px 5px  grey;
+  -webkit-box-shadow: 5px 5px 5px grey;
+          box-shadow: 5px 5px 5px grey;
   cursor: pointer;
-  height: 43px;
-  font-size: 20px;
   margin: 10px 0 70px 0;
 }
 
-#reserve button:hover {
+#reserve button:active {
   opacity: 0.70;
   -webkit-box-shadow: 5px 5px 5px #111111;
           box-shadow: 5px 5px 5px #111111;
@@ -163,20 +161,18 @@ h1 #logo {
 @media (min-width: 992px) {
   #reserve button {
     border-radius: 40px;
-    width: 420px;
     background: linear-gradient(170deg, #FF79DA, #9356DC);
-    border-style: none;
+    border: none;
     color: white;
-    font-size: 25px;
-    height: 70px;
+    width: 420px;
+    font-size: 28px;
+    height: 75px;
     margin: 50px 0 50px 0;
     -webkit-transition: all 400ms;
     transition: all 400ms;
-    -webkit-box-shadow: 5px 5px 5px  grey;
-            box-shadow: 5px 5px 5px  grey;
+    -webkit-box-shadow: 5px 5px 5px grey;
+            box-shadow: 5px 5px 5px grey;
     cursor: pointer;
-    height: 75px;
-    font-size: 28px;
   }
   #reserve button:hover {
     opacity: 0.70;
@@ -230,7 +226,20 @@ h1 #logo {
 
 #function .choice {
   border-radius: 15px;
-  background-color: #ECE9F9;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  border: none;
+  color: white;
+  width: 85%;
+  font-size: 17px;
+  height: 55px;
+  margin: 50px 0 50px 0;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  -webkit-box-shadow: 5px 5px 5px grey;
+          box-shadow: 5px 5px 5px grey;
+  cursor: pointer;
+  background: #ECE9F9;
+  color: black;
   margin: 10px 40px 20px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -241,12 +250,12 @@ h1 #logo {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  border: none;
-  width: 85%;
-  height: 55px;
   cursor: pointer;
-  -webkit-box-shadow: 5px 5px 5px grey;
-          box-shadow: 5px 5px 5px grey;
+  box-shadow: 5px 5px 5px grey;
+}
+
+#function .choice:active {
+  background-color: #f6d8ee;
 }
 
 @media (min-width: 992px) {
@@ -258,10 +267,9 @@ h1 #logo {
     width: 30%;
     height: 75px;
   }
-}
-
-#function .choice:hover {
-  background-color: #f6d8ee;
+  #function .choice:hover {
+    background-color: #f6d8ee;
+  }
 }
 
 #function .choice__number {
@@ -314,15 +322,15 @@ h1 #logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 30px 0 10px;
-  color: gray;
-  font-size: 25px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 30px 0 10px;
+  color: grey;
+  font-size: 25px;
 }
 
-#function .choice .fa-mobile-alt:hover {
+#function .choice .fa-mobile-alt:active {
   color: #9356DC;
 }
 
@@ -330,6 +338,9 @@ h1 #logo {
   #function .choice .fa-mobile-alt {
     margin: 0 60px 0 30px;
     font-size: 35px;
+  }
+  #function .choice .fa-mobile-alt:hover {
+    color: #9356DC;
   }
 }
 
@@ -340,15 +351,15 @@ h1 #logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 30px 0 10px;
-  color: gray;
-  font-size: 25px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 30px 0 10px;
+  color: grey;
+  font-size: 25px;
 }
 
-#function .choice .fa-list-ul:hover {
+#function .choice .fa-list-ul:active {
   color: #9356DC;
 }
 
@@ -356,6 +367,9 @@ h1 #logo {
   #function .choice .fa-list-ul {
     margin: 0 60px 0 30px;
     font-size: 35px;
+  }
+  #function .choice .fa-list-ul:hover {
+    color: #9356DC;
   }
 }
 
@@ -366,15 +380,15 @@ h1 #logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 30px 0 10px;
-  color: gray;
-  font-size: 25px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 30px 0 10px;
+  color: grey;
+  font-size: 25px;
 }
 
-#function .choice .fa-store:hover {
+#function .choice .fa-store:active {
   color: #9356DC;
 }
 
@@ -382,6 +396,9 @@ h1 #logo {
   #function .choice .fa-store {
     margin: 0 60px 0 30px;
     font-size: 35px;
+  }
+  #function .choice .fa-store:hover {
+    color: #9356DC;
   }
 }
 
@@ -533,7 +550,6 @@ h1 #logo {
   height: 60px;
   position: relative;
   background-color: white;
-  color: black;
 }
 
 @media (min-width: 992px) {
@@ -620,6 +636,6 @@ footer ul .fa-utensils {
 }
 
 footer ul .fa-handshake-angle {
-  padding: 0 15px 0 0;
+  padding: 0 10px 0 0;
 }
 /*# sourceMappingURL=accueil.css.map */
