@@ -27,7 +27,7 @@ body
     height: 10vh;
     margin: 8px;
     border-radius: 50%;
-    background: linear-gradient(170deg, #FF79DA, #9356DC);
+    background: linear-gradient(170deg, $color-secondary, $color-primary);
     animation: lds-circle 4.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;    
     }   
 }
@@ -157,7 +157,8 @@ h1
     @include box($color-text);
     &:active
     {      
-      background-color: #f6d8ee;      
+      background-color: #f6d8ee;
+            
     }
     @media (min-width:992px){
       margin: 10px 20px 10px 20px;
@@ -169,80 +170,80 @@ h1
         background-color: #f6d8ee;      
       }
     }   
-    &__number
-    {
-      background-color: $color-primary;
-      border-radius: 40px;
-      width: 25px;
-      height: 25px;
-      margin:0 10px 0 -15px;
-      color: $color-li;
-      @include flexcentercenter;
-      @media (min-width:992px){
-        width: 55px;
-        height: 55px;
-        margin:0 10px 0 -25px;
-        font-size: 20px;
-      }
-    }
-    &__text
-    {
-      @include f-ca;
-      font-weight: bold;
-      @media (min-width:992px){
-        font-size: 25px;
-      }
-    }
-    .fa-mobile-alt
-    {
-      @include icone;
-      &:active
+      &__number
       {
-        color: $color-primary;
+        background-color: $color-primary;
+        border-radius: 40px;
+        width: 25px;
+        height: 25px;
+        margin:0 10px 0 -15px;
+        color: $color-li;
+        @include flexcentercenter;
+        @media (min-width:992px){
+          width: 55px;
+          height: 55px;
+          margin:0 10px 0 -25px;
+          font-size: 20px;
+        }
       }
-      @media (min-width:992px){
-        margin: 0 60px 0 30px;
-        font-size: 35px;
-        &:hover
+      &__text
+      {
+        @include f-ca;
+        font-weight: bold;
+        @media (min-width:992px){
+          font-size: 25px;
+        }
+      }
+      .fa-mobile-alt
+      {
+        @include icone;
+        &:active
         {
           color: $color-primary;
         }
+        @media (min-width:992px){
+          margin: 0 60px 0 30px;
+          font-size: 35px;
+          &:hover
+          {
+            color: $color-primary;
+          }
+        }
       }
-    }
-    
-    .fa-list-ul
-    {
-      @include icone;
-      &:active
+      
+      .fa-list-ul
       {
-        color: $color-primary;
-      }
-      @media (min-width:992px){
-        margin: 0 60px 0 30px;
-        font-size: 35px;
-        &:hover
+        @include icone;
+        &:active
         {
           color: $color-primary;
         }
-      }
-    }
-    
-    .fa-store
-    {
-      @include icone;
-      &:active
-      {
-        color: $color-primary;        
-      }      
-      @media (min-width:992px){
-        margin: 0 60px 0 30px;
-        font-size: 35px;
-        &:hover
-        {
-          color: $color-primary;
+        @media (min-width:992px){
+          margin: 0 60px 0 30px;
+          font-size: 35px;
+          &:hover
+          {
+            color: $color-primary;
+          }
         }
       }
-    }        
+      
+      .fa-store
+      {
+        @include icone;
+        &:active
+        {
+          color: $color-primary;        
+        }      
+        @media (min-width:992px){
+          margin: 0 60px 0 30px;
+          font-size: 35px;
+          &:hover
+          {
+            color: $color-primary;
+          }
+        }
+      }        
   } 
 }
 
