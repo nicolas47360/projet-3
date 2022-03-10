@@ -1,16 +1,6 @@
 @import "./utils/_mixin" ;
 @import "./utils/_variables" ;
-
-@keyframes menu {
-  from{
-    transform: scale(0);
-  }
-  to{
-    transform: scale(1);
-  }
-}
-
-
+@import "./utils/_keyframes";
 body
 {
   margin:0;
@@ -150,9 +140,9 @@ header
         font-size: 45px;
         padding: 0;
       }
-      &:active
+      &:hover
       {
-        color: $color-secondary;
+        background-color: $color-secondary;
         transition: transform 2000ms ease-out;
       }
     }
@@ -214,11 +204,9 @@ header
     .pay
     {
       display: flex;
-      align-items: center;      
+      align-items: flex-end;      
       &__price
-      {
-        display: flex;
-        align-items: flex-end;
+      {        
         margin: 0 20px 15px 0;
         font-weight: bold;
       }
@@ -229,23 +217,20 @@ header
         align-items: center;
         width: 70px;
         border-radius: 0 20px 20px 0;
-        visibility: hidden;
+        height: 100%;        
       }
       .fa-check 
       {
-        width: 50px;
-        display: flex;
+        @include flexcentercenter;
+        width: 50px;        
         font-size: 15px;
-        font-weight: bold;
-        justify-content: center;
+        font-weight: bold;        
         color: rgb(176, 231, 176);
         background-color: white;
         border-radius: 40px;
         height: 30px;
-        width: 30px;
-        align-items: center;
-        margin: 18px;
-        visibility: hidden;        
+        width: 30px;        
+        margin: 18px;             
       }
     }
   }  

@@ -20,6 +20,70 @@
   }
 }
 
+@-webkit-keyframes lds-circle {
+  0%, 100% {
+    -webkit-animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+            animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(1800deg);
+            transform: rotateY(1800deg);
+    -webkit-animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+            animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    -webkit-transform: rotateY(3600deg);
+            transform: rotateY(3600deg);
+  }
+}
+
+@keyframes lds-circle {
+  0%, 100% {
+    -webkit-animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+            animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(1800deg);
+            transform: rotateY(1800deg);
+    -webkit-animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+            animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    -webkit-transform: rotateY(3600deg);
+            transform: rotateY(3600deg);
+  }
+}
+
+@-webkit-keyframes loader {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes loader {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -230,8 +294,8 @@ header h1 #header__logo {
   }
 }
 
-#presentation #contener .fa-heart:active {
-  color: #FF79DA;
+#presentation #contener .fa-heart:hover {
+  background-color: #FF79DA;
   -webkit-transition: -webkit-transform 2000ms ease-out;
   transition: -webkit-transform 2000ms ease-out;
   transition: transform 2000ms ease-out;
@@ -358,18 +422,12 @@ header h1 #header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#presentation .card .pay__price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+#presentation .card .pay__price {
   margin: 0 20px 15px 0;
   font-weight: bold;
 }
@@ -384,29 +442,28 @@ header h1 #header__logo {
           align-items: center;
   width: 70px;
   border-radius: 0 20px 20px 0;
-  visibility: hidden;
+  height: 100%;
 }
 
 #presentation .card .pay .fa-check {
-  width: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 15px;
-  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 50px;
+  font-size: 15px;
+  font-weight: bold;
   color: #b0e7b0;
   background-color: white;
   border-radius: 40px;
   height: 30px;
   width: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 18px;
-  visibility: hidden;
 }
 
 #presentation #selection {
