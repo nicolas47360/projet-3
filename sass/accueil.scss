@@ -19,7 +19,7 @@ body
   opacity: 0.8;  
   @include flexcentercenter;
   background-color: #E2E2E2;
-  animation: loader 3s forwards;
+  animation: loader 5s forwards;
   &__anim
     {      
     display: inline-block;    

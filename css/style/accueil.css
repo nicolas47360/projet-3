@@ -107,8 +107,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #E2E2E2;
-  -webkit-animation: loader 3s forwards;
-          animation: loader 3s forwards;
+  -webkit-animation: loader 5s forwards;
+          animation: loader 5s forwards;
 }
 
 .loader__anim {
