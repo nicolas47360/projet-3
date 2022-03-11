@@ -84,7 +84,9 @@
   }
 }
 
-body {
+@-webkit-keyframes rotate-circle {}
+
+@keyframes rotate-circle {}body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }

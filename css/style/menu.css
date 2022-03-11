@@ -84,7 +84,9 @@
   }
 }
 
-body {
+@-webkit-keyframes rotate-circle {}
+
+@keyframes rotate-circle {}body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
@@ -333,7 +335,7 @@ header h1 #header__logo {
   }
 }
 
-#presentation .card h2 {
+#presentation .card__style h2 {
   color: grey;
   margin: 40px 0 10px 20px;
   font-size: 18px;
@@ -344,12 +346,12 @@ header h1 #header__logo {
 }
 
 @media (min-width: 992px) {
-  #presentation .card h2 {
+  #presentation .card__style h2 {
     font-size: 28px;
   }
 }
 
-#presentation .card .food {
+#presentation .card__style .food {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,81 +360,93 @@ header h1 #header__logo {
           justify-content: space-between;
   border-radius: 20px;
   background-color: white;
-  margin: 15px 10px 0 10px;
+  margin: 15px 30px 0 30px;
   font-size: 15px;
 }
 
 @media (min-width: 992px) {
-  #presentation .card .food {
+  #presentation .card__style .food {
     margin: 15px 20px 0 20px;
     height: 100px;
     font-size: 20px;
   }
 }
 
-#presentation .card .food .menu1 {
-  width: 85%;
+#presentation .card__style .food .menu1 {
+  width: 100%;
   margin: 0 0 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 100%;
   -webkit-animation: 0.6s ease-in-out menu;
           animation: 0.6s ease-in-out menu;
 }
 
-#presentation .card .food .menu1 h3 {
+#presentation .card__style .food .menu1 h3 {
   margin: 15px 0 0 0;
 }
 
-#presentation .card .food .menu1 p {
+#presentation .card__style .food .menu1 p {
   margin: 8px 0 15px 0;
   color: grey;
 }
 
-#presentation .card .food .menu2 {
-  width: 85%;
+#presentation .card__style .food .menu2 {
+  width: 100%;
   margin: 0 0 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 100%;
   -webkit-animation: 0.6s ease-in-out 0.2s menu;
           animation: 0.6s ease-in-out 0.2s menu;
 }
 
-#presentation .card .food .menu2 h3 {
+#presentation .card__style .food .menu2 h3 {
   margin: 15px 0 0 0;
 }
 
-#presentation .card .food .menu2 p {
+#presentation .card__style .food .menu2 p {
   margin: 8px 0 15px 0;
   color: grey;
 }
 
-#presentation .card .food .menu3 {
-  width: 85%;
+#presentation .card__style .food .menu3 {
+  width: 100%;
   margin: 0 0 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 100%;
   -webkit-animation: 0.6s ease-in-out 0.4s menu;
           animation: 0.6s ease-in-out 0.4s menu;
 }
 
-#presentation .card .food .menu3 h3 {
+#presentation .card__style .food .menu3 h3 {
   margin: 15px 0 0 0;
 }
 
-#presentation .card .food .menu3 p {
+#presentation .card__style .food .menu3 p {
   margin: 8px 0 15px 0;
   color: grey;
 }
 
-#presentation .card .pay {
+#presentation .card__style .food .pay {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#presentation .card .pay__price {
-  margin: 0 20px 15px 0;
+#presentation .card__style .food .pay__price {
+  margin: 35px 20px 5px 0;
   font-weight: bold;
 }
 
-#presentation .card .pay__link {
+#presentation .card__style .food .pay__link {
   background-color: #b0e7b0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -440,12 +454,15 @@ header h1 #header__logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 70px;
   border-radius: 0 20px 20px 0;
   height: 100%;
 }
 
-#presentation .card .pay .fa-check {
+#presentation .card__style .food .pay__link .fa-check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

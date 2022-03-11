@@ -55,16 +55,19 @@
 }
 
 @mixin menu {
-    width: 85%;
-        margin: 0 0 0 10px;        
-        h3
-          {
-          margin: 15px 0 0 0;
-          }    
-        p
-        {
-        margin: 8px 0 15px 0;
-        color: $color-text;
-        } 
+    width: 100%;
+    margin: 0 0 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 100%;
+    h3
+    {
+    margin: 15px 0 0 0;    
+    }    
+    p
+    {
+    margin: 8px 0 15px 0;
+    color: $color-text;    
+    } 
 }
 
