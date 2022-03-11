@@ -142,7 +142,7 @@ header h1 #header__logo {
 @media (min-width: 992px) {
   header h1 #header__logo {
     height: 70px;
-    margin-right: 650px;
+    margin-right: 520px;
   }
 }
 
@@ -361,69 +361,80 @@ header h1 #header__logo {
   border-radius: 20px;
   background-color: white;
   margin: 15px 30px 0 30px;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 @media (min-width: 992px) {
   #presentation .card__style .food {
     margin: 15px 20px 0 20px;
-    height: 100px;
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
 #presentation .card__style .food .menu1 {
-  width: 100%;
+  font-size: 14px;
   margin: 0 0 0 10px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-animation: 0.6s ease-in-out menu;
           animation: 0.6s ease-in-out menu;
 }
 
 #presentation .card__style .food .menu1 h3 {
   margin: 15px 0 0 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 #presentation .card__style .food .menu1 p {
   margin: 8px 0 15px 0;
   color: grey;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 #presentation .card__style .food .menu2 {
-  width: 100%;
+  font-size: 14px;
   margin: 0 0 0 10px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-animation: 0.6s ease-in-out 0.2s menu;
           animation: 0.6s ease-in-out 0.2s menu;
 }
 
 #presentation .card__style .food .menu2 h3 {
   margin: 15px 0 0 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 #presentation .card__style .food .menu2 p {
   margin: 8px 0 15px 0;
   color: grey;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 #presentation .card__style .food .menu3 {
-  width: 100%;
+  font-size: 14px;
   margin: 0 0 0 10px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-animation: 0.6s ease-in-out 0.4s menu;
           animation: 0.6s ease-in-out 0.4s menu;
 }
 
 #presentation .card__style .food .menu3 h3 {
   margin: 15px 0 0 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 #presentation .card__style .food .menu3 p {
   margin: 8px 0 15px 0;
   color: grey;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 #presentation .card__style .food .pay {

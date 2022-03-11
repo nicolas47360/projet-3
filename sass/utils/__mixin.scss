@@ -54,19 +54,22 @@
     margin: 0 40px 0 10px;    
 }
 
-@mixin menu {
-    width: 100%;
-    margin: 0 0 0 10px;   
-    
+@mixin menu {    
+    font-size: 14px;
+    margin: 0 0 0 10px;
+    flex-wrap: nowrap;    
     h3
     {
     margin: 15px 0 0 0;
-    flex-wrap: wrap;    
+    text-overflow: ellipsis;
+    overflow: hidden;        
     }    
     p
     {
     margin: 8px 0 15px 0;
-    color: $color-text;    
+    color: $color-text;
+    text-overflow: ellipsis;
+    overflow: hidden;    
     } 
 }
 
