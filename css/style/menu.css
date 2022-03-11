@@ -375,13 +375,14 @@ header h1 #header__logo {
 #presentation .card__style .food .menu1 {
   width: 100%;
   margin: 0 0 0 10px;
-  height: 100%;
   -webkit-animation: 0.6s ease-in-out menu;
           animation: 0.6s ease-in-out menu;
 }
 
 #presentation .card__style .food .menu1 h3 {
   margin: 15px 0 0 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #presentation .card__style .food .menu1 p {
@@ -392,13 +393,14 @@ header h1 #header__logo {
 #presentation .card__style .food .menu2 {
   width: 100%;
   margin: 0 0 0 10px;
-  height: 100%;
   -webkit-animation: 0.6s ease-in-out 0.2s menu;
           animation: 0.6s ease-in-out 0.2s menu;
 }
 
 #presentation .card__style .food .menu2 h3 {
   margin: 15px 0 0 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #presentation .card__style .food .menu2 p {
@@ -409,13 +411,14 @@ header h1 #header__logo {
 #presentation .card__style .food .menu3 {
   width: 100%;
   margin: 0 0 0 10px;
-  height: 100%;
   -webkit-animation: 0.6s ease-in-out 0.4s menu;
           animation: 0.6s ease-in-out 0.4s menu;
 }
 
 #presentation .card__style .food .menu3 h3 {
   margin: 15px 0 0 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #presentation .card__style .food .menu3 p {
