@@ -179,7 +179,8 @@ header
         justify-content: space-between;
         border-radius: 20px;
         background-color: $color-li;
-        margin: 15px 10px 0 10px;      
+        margin: 15px 10px 0 10px;
+        font-size: 15px;      
         @media (min-width:992px) {
           margin: 15px 20px 0 20px;
           height: 100px;

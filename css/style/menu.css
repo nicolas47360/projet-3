@@ -359,6 +359,7 @@ header h1 #header__logo {
   border-radius: 20px;
   background-color: white;
   margin: 15px 10px 0 10px;
+  font-size: 15px;
 }
 
 @media (min-width: 992px) {
