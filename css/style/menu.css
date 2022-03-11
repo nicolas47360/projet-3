@@ -103,58 +103,44 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 75px;
-}
-
-@media (min-width: 992px) {
-  header {
-    height: 150px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
 }
 
 header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-@media (min-width: 992px) {
-  header h1 {
-    width: 58%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100vw;
 }
 
 header h1 .fa-arrow-left {
-  padding-left: 20px;
   color: grey;
   font-size: 25px;
 }
 
 @media (min-width: 992px) {
-  header h1 {
-    padding-left: 60px;
-    font-size: 40px;
+  header h1 .fa-arrow-left {
+    font-size: 50px;
   }
 }
 
 header h1 #header__logo {
+  margin-right: 80px;
   height: 35px;
-  padding-left: 70px;
 }
 
 @media (min-width: 992px) {
-  header h1 {
-    height: 58px;
-    padding-left: 100px;
+  header h1 #header__logo {
+    height: 70px;
+    margin-right: 650px;
   }
 }
 
@@ -219,7 +205,6 @@ header h1 #header__logo {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 350px;
     margin: 40px 0 40px 0;
   }
 }
@@ -248,6 +233,49 @@ header h1 #header__logo {
   }
 }
 
+#presentation #contener__title h1 {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 25px;
+  padding-left: 20px;
+}
+
+@media (min-width: 992px) {
+  #presentation #contener__title h1 {
+    font-size: 40px;
+    padding: 0;
+  }
+}
+
+#presentation #contener__title .fa-heart {
+  font-size: 25px;
+  color: grey;
+  padding-right: 40px;
+  -webkit-transform: color;
+          transform: color;
+}
+
+@media (min-width: 992px) {
+  #presentation #contener__title .fa-heart {
+    font-size: 45px;
+    padding: 0;
+  }
+}
+
+#presentation #contener__title .fa-heart:hover {
+  background-color: #FF79DA;
+  -webkit-transition: -webkit-transform 2000ms ease-out;
+  transition: -webkit-transform 2000ms ease-out;
+  transition: transform 2000ms ease-out;
+  transition: transform 2000ms ease-out, -webkit-transform 2000ms ease-out;
+}
+
+#presentation #contener #picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #presentation #contener #picture__position {
   -o-object-fit: cover;
      object-fit: cover;
@@ -257,49 +285,12 @@ header h1 #header__logo {
 
 @media (min-width: 992px) {
   #presentation #contener #picture__position {
-    width: 600px;
-    height: 250px;
+    width: 850px;
+    height: 450px;
     border-radius: 40px;
     -webkit-box-shadow: 5px 5px 5px grey;
             box-shadow: 5px 5px 5px grey;
   }
-}
-
-#presentation #contener h1 {
-  font-style: italic;
-  font-weight: bold;
-  font-size: 30px;
-  padding-left: 20px;
-}
-
-@media (min-width992px) {
-  #presentation #contener h1 {
-    font-size: 40px;
-    padding: 0;
-  }
-}
-
-#presentation #contener .fa-heart {
-  font-size: 30px;
-  color: grey;
-  padding-right: 40px;
-  -webkit-transform: color;
-          transform: color;
-}
-
-@media (min-width992px) {
-  #presentation #contener .fa-heart {
-    font-size: 45px;
-    padding: 0;
-  }
-}
-
-#presentation #contener .fa-heart:hover {
-  background-color: #FF79DA;
-  -webkit-transition: -webkit-transform 2000ms ease-out;
-  transition: -webkit-transform 2000ms ease-out;
-  transition: transform 2000ms ease-out;
-  transition: transform 2000ms ease-out, -webkit-transform 2000ms ease-out;
 }
 
 #presentation .card {
@@ -352,6 +343,12 @@ header h1 #header__logo {
   text-decoration-thickness: 2px;
 }
 
+@media (min-width: 992px) {
+  #presentation .card h2 {
+    font-size: 28px;
+  }
+}
+
 #presentation .card .food {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,6 +364,8 @@ header h1 #header__logo {
 @media (min-width: 992px) {
   #presentation .card .food {
     margin: 15px 20px 0 20px;
+    height: 100px;
+    font-size: 20px;
   }
 }
 
@@ -496,8 +495,25 @@ header h1 #header__logo {
   cursor: pointer;
   font-size: 15px;
   margin: 40px 0 70px 0;
-  height: 40px;
   box-shadow: 5px 5px 5px grey;
+}
+
+@media (min-width: 992px) {
+  #presentation #selection button {
+    border-radius: 40px;
+    background: linear-gradient(170deg, #FF79DA, #9356DC);
+    border: none;
+    color: white;
+    width: 380px;
+    font-size: 30px;
+    height: 60px;
+    margin: 50px 0 50px 0;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+    -webkit-box-shadow: 5px 5px 5px grey;
+            box-shadow: 5px 5px 5px grey;
+    cursor: pointer;
+  }
 }
 
 #presentation #selection button:active {
@@ -517,8 +533,13 @@ header h1 #header__logo {
 /* footer */
 footer {
   background-color: #3b3b3b;
-  width: 100%;
   margin: 0;
+}
+
+@media (min-width: 992px) {
+  footer {
+    padding: 40px 0 40px 0;
+  }
 }
 
 footer h2 {
@@ -528,10 +549,35 @@ footer h2 {
   margin: 0;
 }
 
+@media (min-width: 992px) {
+  footer h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 40px;
+    padding: 20px 0 40px 20px;
+  }
+}
+
 footer ul {
   padding: 0 0 60px 20px;
   list-style-type: none;
   margin: 0;
+}
+
+@media (min-width: 992px) {
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 30px;
+    padding: 20px 0 40px 20px;
+  }
 }
 
 footer ul li {
@@ -539,7 +585,16 @@ footer ul li {
   margin: 10px 0 0 0;
 }
 
-footer ul .fa-utensils.fa-handshake-angle {
+footer ul .contact {
+  color: white;
+  text-decoration: none;
+}
+
+footer ul .fa-utensils {
   padding: 0 15px 0 0;
+}
+
+footer ul .fa-handshake-angle {
+  padding: 0 10px 0 0;
 }
 /*# sourceMappingURL=menu.css.map */

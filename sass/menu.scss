@@ -1,6 +1,7 @@
 @import "./utils/_mixin" ;
 @import "./utils/_variables" ;
 @import "./utils/_keyframes";
+
 body
 {
   margin:0;
@@ -21,42 +22,36 @@ a:link
 
 /* header */
 
-header 
+header
 {
   display: flex;
-  height: 75px;
-  @media (min-width:992px){
-    height: 150px;
-    justify-content: space-between;
-  } 
-  
+  align-items: center;  
+  width: 100vw;
   h1
   {  
-    display: flex;
+    @include f-ca;
+    justify-content: space-around ;
+    width: 100vw;    
     @media (min-width:992px){
-      width: 58%;
-      justify-content: space-between;
-      align-items: center;
+          
     }      
     .fa-arrow-left
-    {
-      padding-left: 20px;
+    {      
       color: $color-text;
-      font-size: 25px; 
-    }
-    @media (min-width:992px){
-      padding-left: 60px;      
-      font-size: 40px; 
-    }  
+      font-size: 25px;        
+      @media (min-width:992px){              
+        font-size: 50px;
+      }   
+    }    
     #header__logo
-    {   
-      height: 35px;
-      padding-left:70px;
-    }
-    @media (min-width:992px){
-      height: 58px;
-      padding-left: 100px; 
-    }
+    { 
+      margin-right: 80px;  
+      height: 35px;      
+      @media (min-width:992px){
+        height: 70px;
+        margin-right: 650px;
+      }
+    }   
   }
 }
 
@@ -84,8 +79,7 @@ header
       flex-direction: column;
       @media (min-width:992px){
         align-items: center;
-        justify-content: center;
-        height: 350px;
+        justify-content: center;        
         margin: 40px 0 40px 0;
       }              
     }
@@ -101,51 +95,51 @@ header
         margin: 0;
         justify-content: space-around;
         width: 100%;
+      }            
+      h1
+      {          
+        font-style: italic;
+        font-weight: bold;
+        font-size: 25px;     
+        padding-left: 20px;
+        @media (min-width:992px){
+          font-size: 40px;
+          padding: 0;
+        }
       }
-    }
+      .fa-heart
+      {     
+        font-size: 25px;
+        color: $color-text;
+        padding-right: 40px;
+        transform: color;
+        @media (min-width:992px){
+          font-size: 45px;
+          padding: 0;
+        }
+        &:hover
+        {
+          background-color: $color-secondary;
+          transition: transform 2000ms ease-out;
+        }
+      }
+    }    
     #picture
-    {        
+    {
+      display: flex;     
       &__position
       {
         object-fit: cover;
         height: 250px;
         width:100%;
         @media (min-width:992px){
-          width: 600px;
-          height: 250px;      
-          border-radius: 40px;
+          width: 850px;
+          height: 450px;      
+          border-radius: 40px;          
           @include box($color-text)
         }         
       }
-    }   
-    h1
-    {
-      
-      font-style: italic;
-      font-weight: bold;
-      font-size: 30px;     
-      padding-left: 20px;
-      @media (min-width992px){
-        font-size: 40px;
-        padding: 0;
-      }
-    }
-    .fa-heart
-    {     
-      font-size: 30px;
-      color: $color-text;
-      padding-right: 40px;
-      transform: color;
-      @media (min-width992px){
-        font-size: 45px;
-        padding: 0;
-      }
-      &:hover
-      {
-        background-color: $color-secondary;
-        transition: transform 2000ms ease-out;
-      }
-    }
+    } 
   }
   .card
   {
@@ -156,7 +150,8 @@ header
     @media (min-width:992px){
       flex-direction:row;
       justify-content: space-around;
-      width: 85%;      
+      width: 85%;
+            
     }
     &__style
       {
@@ -166,41 +161,46 @@ header
           width: 40%;
         }       
       } 
-    h2
-    {
-    color: $color-text;
-    margin: 40px 0 10px 20px ;
-    font-size: 18px;  
-    text-decoration: $color-check underline 4px;
-    text-underline-offset: 8px;
-    text-decoration-thickness: 2px;      
-    }
-    .food
-    {
-      display: flex;
-      justify-content: space-between;
-      border-radius: 20px;
-      background-color: $color-li;
-      margin: 15px 10px 0 10px;      
-      @media (min-width:992px) {
-        margin: 15px 20px 0 20px;
+      h2
+      {
+      color: $color-text;
+      margin: 40px 0 10px 20px ;
+      font-size: 18px;  
+      text-decoration: $color-check underline 4px;
+      text-underline-offset: 8px;
+      text-decoration-thickness: 2px;
+      @media (min-width:992px){
+        font-size: 28px;
       }      
-      .menu1     
-      {
-        @include menu;
-        animation: 0.6s ease-in-out menu;        
       }
-      .menu2     
+      .food
       {
-        @include menu;
-        animation: 0.6s ease-in-out 0.2s menu;        
+        display: flex;
+        justify-content: space-between;
+        border-radius: 20px;
+        background-color: $color-li;
+        margin: 15px 10px 0 10px;      
+        @media (min-width:992px) {
+          margin: 15px 20px 0 20px;
+          height: 100px;
+          font-size: 20px;
+        }      
+        .menu1     
+        {
+          @include menu;
+          animation: 0.6s ease-in-out menu;        
+        }
+        .menu2     
+        {
+          @include menu;
+          animation: 0.6s ease-in-out 0.2s menu;        
+        }
+        .menu3     
+        {
+          @include menu;;
+          animation: 0.6s ease-in-out 0.4s menu;        
+        }
       }
-      .menu3     
-      {
-        @include menu;;
-        animation: 0.6s ease-in-out 0.4s menu;        
-      }
-    }
     .pay
     {
       display: flex;
@@ -242,12 +242,13 @@ header
     @include flexcentercenter;
     button
     {
-     @include button(40px, 200px, 25px,40px);      
+     @include button(40px, 200px, 25px, 40px);      
       font-size: 15px;
       margin: 40px 0 70px 0;      
-      height: 40px;    
-      
       @include box($color-text);
+      @media (min-width:992px){
+        @include button(40px, 380px, 30px, 60px)
+      }
       &:active
       {
         opacity: 0.70;
@@ -269,32 +270,55 @@ header
 
 footer
 {
-  background-color: #3b3b3b;
-  width: 100%;
-  margin: 0; 
+  background-color:$background-footer;
+  margin: 0;
+  @media (min-width:992px){
+    padding: 40px 0 40px 0;
+  }
   h2
   {
     padding: 20px 0 20px 20px;
-    color: white;
+    color: $color-li;
     font-style: italic;
     margin: 0;
+    @media (min-width:992px){
+      display: flex;
+      justify-content: center;
+      font-size: 40px;
+      padding: 20px 0 40px 20px;
+    }
   }
   ul
   {
-  padding: 0 0 60px 20px;
-  list-style-type: none;
-  margin: 0;
-  li
-  {
-    color: white;
-    margin: 10px 0 0 0;
-  }
-  .fa-utensils.fa-handshake-angle
-  {
-    padding: 0 15px 0 0;
-  }
-}    
+    padding: 0 0 60px 20px;
+    list-style-type: none;
+    margin: 0;
+    @media (min-width:992px){
+      display: flex;
+      justify-content: space-around;
+      font-size: 30px;
+      padding: 20px 0 40px 20px;
+    }
+    li
+    {
+      color: $color-li;
+      margin: 10px 0 0 0;
+    }
+    .contact
+    {
+      color:$color-li;
+      text-decoration: none;
+    }    
+    .fa-utensils
+    {
+      padding: 0 15px 0 0;
+    }    
+    .fa-handshake-angle
+    {
+      padding: 0 10px 0 0;
+    }
   }  
+}
 
 
 
