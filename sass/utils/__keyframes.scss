@@ -27,12 +27,31 @@
     from{
       transform: scale(1);
     }
+    80%{
+      transform: scale(1);
+    }
     to{
       transform: scale(0);
     }
   }
   
   @keyframes rotate-circle {
+    100%, 0% {
+      
+    }
+    100% {
+      transform: sclae(1);
+    }
+    80% {
+      transform: sclae(1);
+      
+    }
+    50% {
+      transform: scale(0.8);
+    }
+    0% {
+      transform: sclae(0);      
+    }
 
     
     

@@ -19,7 +19,7 @@ body
   opacity: 0.8;  
   @include flexcentercenter;
   background-color: #E2E2E2;
-  animation: loader 5s forwards;
+  animation: loader 0.2s forwards;
   &__anim
     {      
     display: inline-block;    
@@ -282,32 +282,32 @@ h1
     margin: 10px 20px 30px 20px;
     color: black;
     text-decoration: none;
+    
     @include box($color-text);
     @media (min-width:992px){
       justify-content: space-around;
       width: 40%;
       margin: 10px 20px 50px 20px;
+      position: relative;
     }
     &__picture
     {
       object-fit: cover;
       border-radius: 20px 20px 0 0 ;
       height: 250px;
-      position: relative;
+      
     }
     &__text
     {
-      z-index: 0;
-      position: absolute;
+      z-index: 0;      
       background-color: $color-tertiary;      
       padding: 8px 15px 8px 15px;
       color: #25997c;
       font-weight: bold;
-      @media (max-width:992px){
-        right: 40px;
-      }
-      @media (min-width:992px){
-        margin: 0 0 80px 100px;
+      right: 40px;
+      position: absolute;        
+      @media (min-width:992px){        
+        top: 10px;
       }
     }
     &__contener
@@ -336,25 +336,18 @@ h1
       }
     
     }         
-    .fa-heart
+    .fa-solid
     {
       font-size: 25px;
       @include flexcentercenter;
       width: 80px;
-      height: 60px;
-      position: relative;
-      background-color: $color-li;
+      height: 60px;      
+      color: $color-li;
+      text-shadow: 0px 0px 0px black;
       &:hover
-      {
-        content: '';
-        color: #9356DC;          
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #9356DC;
-        transition: all .5s;       
-      }            
+      {        
+        color: #9356DC;         
+        text-shadow: none;       }            
       @media (min-width:992px){
         height: 100%;
         border-radius: 0 0 20px 0;

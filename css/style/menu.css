@@ -67,6 +67,10 @@
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
   to {
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -78,15 +82,59 @@
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
   to {
     -webkit-transform: scale(0);
             transform: scale(0);
   }
 }
 
-@-webkit-keyframes rotate-circle {}
+@-webkit-keyframes rotate-circle {
+  100%, 0% {
+  }
+  100% {
+    -webkit-transform: sclae(1);
+            transform: sclae(1);
+  }
+  80% {
+    -webkit-transform: sclae(1);
+            transform: sclae(1);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  0% {
+    -webkit-transform: sclae(0);
+            transform: sclae(0);
+  }
+}
 
-@keyframes rotate-circle {}body {
+@keyframes rotate-circle {
+  100%, 0% {
+  }
+  100% {
+    -webkit-transform: sclae(1);
+            transform: sclae(1);
+  }
+  80% {
+    -webkit-transform: sclae(1);
+            transform: sclae(1);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  0% {
+    -webkit-transform: sclae(0);
+            transform: sclae(0);
+  }
+}
+
+body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
@@ -249,27 +297,40 @@ header h1 #header__logo {
   }
 }
 
-#presentation #contener__title .fa-heart {
+#presentation #contener__title .fa-solid {
   font-size: 25px;
-  color: grey;
-  padding-right: 40px;
-  -webkit-transform: color;
-          transform: color;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80px;
+  height: 60px;
+  color: #ECE9F9;
+  text-shadow: 0px 0px 0px black;
 }
 
 @media (min-width: 992px) {
-  #presentation #contener__title .fa-heart {
+  #presentation #contener__title .fa-solid {
     font-size: 45px;
     padding: 0;
   }
 }
 
-#presentation #contener__title .fa-heart:hover {
-  background-color: #FF79DA;
-  -webkit-transition: -webkit-transform 2000ms ease-out;
-  transition: -webkit-transform 2000ms ease-out;
-  transition: transform 2000ms ease-out;
-  transition: transform 2000ms ease-out, -webkit-transform 2000ms ease-out;
+#presentation #contener__title .fa-solid:hover {
+  color: #9356DC;
+  text-shadow: none;
+}
+
+@media (min-width: 992px) {
+  #presentation #contener__title .fa-solid {
+    height: 100%;
+    border-radius: 0 0 20px 0;
+  }
 }
 
 #presentation #contener #picture {
