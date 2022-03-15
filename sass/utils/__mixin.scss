@@ -57,19 +57,22 @@
 @mixin menu {    
     font-size: 14px;
     margin: 0 0 0 10px;
-    flex-wrap: nowrap;    
+    overflow: hidden;    
     h3
     {
     margin: 15px 0 0 0;
     text-overflow: ellipsis;
-    overflow: hidden;        
+    overflow: hidden;
+    white-space: nowrap;        
     }    
     p
     {
     margin: 8px 0 15px 0;
     color: $color-text;
     text-overflow: ellipsis;
-    overflow: hidden;    
+    overflow: hidden;
+    white-space: nowrap; 
+        
     } 
 }
 

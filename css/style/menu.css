@@ -92,45 +92,37 @@
   }
 }
 
-@-webkit-keyframes rotate-circle {
-  100%, 0% {
-  }
-  100% {
-    -webkit-transform: sclae(1);
-            transform: sclae(1);
-  }
-  80% {
-    -webkit-transform: sclae(1);
-            transform: sclae(1);
-  }
-  50% {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+@-webkit-keyframes slider {
+  0% {
+    opacity: 0;
   }
   0% {
-    -webkit-transform: sclae(0);
-            transform: sclae(0);
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
-@keyframes rotate-circle {
-  100%, 0% {
-  }
-  100% {
-    -webkit-transform: sclae(1);
-            transform: sclae(1);
-  }
-  80% {
-    -webkit-transform: sclae(1);
-            transform: sclae(1);
-  }
-  50% {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+@keyframes slider {
+  0% {
+    opacity: 0;
   }
   0% {
-    -webkit-transform: sclae(0);
-            transform: sclae(0);
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -423,6 +415,18 @@ header h1 #header__logo {
   background-color: white;
   margin: 15px 30px 0 30px;
   font-size: 14px;
+  -webkit-animation: slider 0.4s ease-in-out backwards;
+          animation: slider 0.4s ease-in-out backwards;
+  overflow: hidden;
+}
+
+#presentation .card__style .food:hover .pay__price {
+  margin-left: -180px;
+}
+
+#presentation .card__style .food:hover .fa-check {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 @media (min-width: 992px) {
@@ -435,8 +439,7 @@ header h1 #header__logo {
 #presentation .card__style .food .menu1 {
   font-size: 14px;
   margin: 0 0 0 10px;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  overflow: hidden;
   -webkit-animation: 0.6s ease-in-out menu;
           animation: 0.6s ease-in-out menu;
 }
@@ -445,6 +448,7 @@ header h1 #header__logo {
   margin: 15px 0 0 0;
   text-overflow: ellipsis;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 #presentation .card__style .food .menu1 p {
@@ -452,13 +456,13 @@ header h1 #header__logo {
   color: grey;
   text-overflow: ellipsis;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 #presentation .card__style .food .menu2 {
   font-size: 14px;
   margin: 0 0 0 10px;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  overflow: hidden;
   -webkit-animation: 0.6s ease-in-out 0.2s menu;
           animation: 0.6s ease-in-out 0.2s menu;
 }
@@ -467,6 +471,7 @@ header h1 #header__logo {
   margin: 15px 0 0 0;
   text-overflow: ellipsis;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 #presentation .card__style .food .menu2 p {
@@ -474,13 +479,13 @@ header h1 #header__logo {
   color: grey;
   text-overflow: ellipsis;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 #presentation .card__style .food .menu3 {
   font-size: 14px;
   margin: 0 0 0 10px;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  overflow: hidden;
   -webkit-animation: 0.6s ease-in-out 0.4s menu;
           animation: 0.6s ease-in-out 0.4s menu;
 }
@@ -489,6 +494,7 @@ header h1 #header__logo {
   margin: 15px 0 0 0;
   text-overflow: ellipsis;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 #presentation .card__style .food .menu3 p {
@@ -496,6 +502,7 @@ header h1 #header__logo {
   color: grey;
   text-overflow: ellipsis;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 #presentation .card__style .food .pay {
@@ -529,6 +536,9 @@ header h1 #header__logo {
   width: 70px;
   border-radius: 0 20px 20px 0;
   height: 100%;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  margin-right: -70px;
 }
 
 #presentation .card__style .food .pay__link .fa-check {
@@ -550,6 +560,8 @@ header h1 #header__logo {
   height: 30px;
   width: 30px;
   margin: 18px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 #presentation #selection {

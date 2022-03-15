@@ -35,24 +35,18 @@
     }
   }
   
-  @keyframes rotate-circle {
-    100%, 0% {
-      
+  @keyframes slider {
+    0%{
+        opacity:0;
     }
-    100% {
-      transform: sclae(1);
+    0%{
+        transform: translateY(40px);
     }
-    80% {
-      transform: sclae(1);
-      
+ 
+    100%{
+        opacity: 1;
     }
-    50% {
-      transform: scale(0.8);
+    100%{
+        transform: translateY(0);
     }
-    0% {
-      transform: sclae(0);      
-    }
-
-    
-    
-}
+  }
