@@ -11,16 +11,16 @@
 
 @mixin button($border, $fov, $size, $height) {
     border-radius: $border;
-    background: linear-gradient(170deg, #FF79DA, #9356DC);
+    background: $background-button;
     border: none;  
-    color: white;
+    color: $color-li;
     width: $fov;
     font-size: $size;
     height: $height;
     margin: 50px 0 50px 0;
     transition: all 400ms;
     @include box($color-text);
-    cursor: pointer;    
+    cursor: pointer;   
 }
 
 @mixin hover {
@@ -75,4 +75,5 @@
         
     } 
 }
+
 
