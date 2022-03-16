@@ -408,16 +408,19 @@ header h1 #header__logo {
   color: grey;
   margin: 40px 0 10px 20px;
   font-size: 18px;
-  -webkit-text-decoration: #b0e7b0 underline 4px;
-          text-decoration: #b0e7b0 underline 4px;
-  text-underline-offset: 8px;
-  text-decoration-thickness: 2px;
 }
 
 @media (min-width: 992px) {
   #presentation .card__style h2 {
     font-size: 28px;
   }
+}
+
+#presentation .card__style .under-title {
+  background-color: #b0e7b0;
+  width: 45px;
+  height: 2px;
+  margin-left: 20px;
 }
 
 #presentation .card__style .food {

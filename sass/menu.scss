@@ -174,12 +174,18 @@ header
         color: $color-text;
         margin: 40px 0 10px 20px ;
         font-size: 18px;  
-        text-decoration: $color-check underline 4px;
-        text-underline-offset: 8px;
-        text-decoration-thickness: 2px;
+        
         @media (min-width:992px){
           font-size: 28px;
         }      
+        }
+        .under-title
+        {
+          background-color: $color-check;
+          width: 45px;
+          height: 2px;
+          margin-left:20px;
+
         }
         .food
         {
