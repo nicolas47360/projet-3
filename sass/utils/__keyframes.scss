@@ -46,10 +46,10 @@
 
   @keyframes heart {
     from{
-      transform: opacity(0);      
+      transform: scaleY(0);      
     }
     to{
-      transform: opacity(1);
+      transform: scaleY(1);
     }
     
   }
