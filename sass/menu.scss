@@ -118,7 +118,7 @@ header
         &:hover
         { animation: heart 2s ease-in-out ;
           transition: all;      
-          color: red;        
+          color: $color-primary;        
           text-shadow: none;       }            
         @media (min-width:992px){
           height: 100%;

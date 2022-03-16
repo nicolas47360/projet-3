@@ -326,7 +326,7 @@ header h1 #header__logo {
           animation: heart 2s ease-in-out;
   -webkit-transition: all;
   transition: all;
-  color: red;
+  color: #9356DC;
   text-shadow: none;
 }
 

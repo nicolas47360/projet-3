@@ -155,14 +155,14 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #E2E2E2;
-  -webkit-animation: loader 0.2s forwards;
-          animation: loader 0.2s forwards;
+  -webkit-animation: loader 2s forwards;
+          animation: loader 2s forwards;
 }
 
 .loader__anim {
   display: inline-block;
-  width: 15vw;
-  height: 10vh;
+  width: 20vw;
+  height: 20vh;
   margin: 8px;
   border-radius: 50%;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
