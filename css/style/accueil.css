@@ -28,12 +28,16 @@
   0% {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
+    opacity: 1;
   }
   50% {
     -webkit-transform: rotateY(1800deg);
             transform: rotateY(1800deg);
     -webkit-animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
             animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  99% {
+    opacity: 0;
   }
   100% {
     -webkit-transform: rotateY(3600deg);
@@ -49,12 +53,16 @@
   0% {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
+    opacity: 1;
   }
   50% {
     -webkit-transform: rotateY(1800deg);
             transform: rotateY(1800deg);
     -webkit-animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
             animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  99% {
+    opacity: 0;
   }
   100% {
     -webkit-transform: rotateY(3600deg);
@@ -112,23 +120,19 @@
 
 @-webkit-keyframes heart {
   from {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    opacity: 0;
   }
   to {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    opacity: 1;
   }
 }
 
 @keyframes heart {
   from {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    opacity: 0;
   }
   to {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    opacity: 1;
   }
 }
 
@@ -142,9 +146,6 @@ body {
   -webkit-transform: translateZ(1px);
           transform: translateZ(1px);
   position: fixed;
-  width: 100vw;
-  height: 100vh;
-  opacity: 0.8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,7 +155,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #E2E2E2;
+  background-color: white;
+  width: 100%;
+  height: 100%;
   -webkit-animation: loader 2s forwards;
           animation: loader 2s forwards;
 }
@@ -422,6 +425,10 @@ h1 #logo {
 }
 
 #function .choice:active {
+  background-color: #f6d8ee;
+}
+
+#function .choice:active .choice__color {
   background-color: #f6d8ee;
 }
 
@@ -717,11 +724,15 @@ h1 #logo {
   height: 60px;
   color: white;
   text-shadow: 0px 0px 0px black;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 #restaurant .visual .fa-heart:active {
   color: #9356DC;
   text-shadow: none;
+  -webkit-animation: heart 2s ease-in-out;
+          animation: heart 2s ease-in-out;
 }
 
 @media (min-width: 992px) {
@@ -732,6 +743,8 @@ h1 #logo {
   #restaurant .visual .fa-heart:hover {
     color: #9356DC;
     text-shadow: none;
+    -webkit-animation: heart 2s ease-in-out;
+            animation: heart 2s ease-in-out;
   }
 }
 

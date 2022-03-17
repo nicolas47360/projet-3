@@ -28,12 +28,16 @@
   0% {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
+    opacity: 1;
   }
   50% {
     -webkit-transform: rotateY(1800deg);
             transform: rotateY(1800deg);
     -webkit-animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
             animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  99% {
+    opacity: 0;
   }
   100% {
     -webkit-transform: rotateY(3600deg);
@@ -49,12 +53,16 @@
   0% {
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
+    opacity: 1;
   }
   50% {
     -webkit-transform: rotateY(1800deg);
             transform: rotateY(1800deg);
     -webkit-animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
             animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  99% {
+    opacity: 0;
   }
   100% {
     -webkit-transform: rotateY(3600deg);
@@ -112,23 +120,19 @@
 
 @-webkit-keyframes heart {
   from {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    opacity: 0;
   }
   to {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    opacity: 1;
   }
 }
 
 @keyframes heart {
   from {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    opacity: 0;
   }
   to {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    opacity: 1;
   }
 }
 
@@ -154,7 +158,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header h1 {
@@ -164,31 +170,49 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100vw;
+  margin: 20px 0 20px 0;
 }
 
-header h1 .fa-arrow-left {
+header h1 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 a .fa-arrow-left {
   color: grey;
   font-size: 25px;
+  position: absolute;
+  left: 0;
+  margin-left: 20px;
 }
 
 @media (min-width: 992px) {
-  header h1 .fa-arrow-left {
+  header h1 a .fa-arrow-left {
     font-size: 50px;
+    margin-left: 40px;
   }
 }
 
 header h1 #header__logo {
-  margin-right: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 35px;
 }
 
 @media (min-width: 992px) {
   header h1 #header__logo {
     height: 70px;
-    margin-right: 520px;
   }
 }
 
@@ -310,8 +334,8 @@ header h1 #header__logo {
   height: 60px;
   color: #ECE9F9;
   text-shadow: 0px 0px 0px black;
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 @media (min-width: 992px) {
@@ -322,8 +346,8 @@ header h1 #header__logo {
 }
 
 #presentation #contener__title .fa-heart:active {
-  -webkit-animation: heart 0.3s ease-in-out;
-          animation: heart 0.3s ease-in-out;
+  -webkit-animation: heart 2s ease-in-out;
+          animation: heart 2s ease-in-out;
   color: #9356DC;
   text-shadow: none;
 }
@@ -334,8 +358,8 @@ header h1 #header__logo {
     border-radius: 0 0 20px 0;
   }
   #presentation #contener__title .fa-heart:hover {
-    -webkit-animation: heart 0.3s ease-in-out;
-            animation: heart 0.3s ease-in-out;
+    -webkit-animation: heart 2s ease-in-out;
+            animation: heart 2s ease-in-out;
     color: #9356DC;
     text-shadow: none;
   }

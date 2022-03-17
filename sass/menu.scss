@@ -23,28 +23,36 @@ a:link
 header
 {
   display: flex;
-  align-items: center;  
-  width: 100vw;
+  align-items: center;
+  justify-content: center;  
   h1
   {  
-    @include f-ca;
-    justify-content: space-around ;
-    width: 100vw;    
-    .fa-arrow-left
-    {      
-      color: $color-text;
-      font-size: 25px;        
-      @media (min-width:992px){              
-        font-size: 50px;
-      }   
+    @include f-ca;       
+    margin: 20px 0 20px 0;    
+    a
+    {
+      display: flex;
+      align-items: center;           
+      .fa-arrow-left
+      {      
+        color: $color-text;
+        font-size: 25px;
+        position: absolute;
+        left: 0;
+        margin-left: 20px;        
+        @media (min-width:992px)
+        {              
+          font-size: 50px;
+          margin-left: 40px;        
+        }   
+      }        
     }    
     #header__logo
     { 
-      margin-right: 80px;  
-      height: 35px;      
+      @include flexcentercenter;      
+      height: 35px;           
       @media (min-width:992px){
         height: 70px;
-        margin-right: 520px;
       }
     }   
   }
@@ -110,13 +118,13 @@ header
         height: 60px;      
         color: $background;
         text-shadow: 0px 0px 0px $color-link;        
-        transform: scaleY(1);       
+        transform: scale(1);       
         @media (min-width:992px){
           font-size: 45px;
           padding: 0;
         }
         &:active
-        { animation: heart 0.3s ease-in-out ;                
+        { animation: heart 2s ease-in-out ;                
           color: $color-primary;        
           text-shadow: none; 
         }            
@@ -124,11 +132,11 @@ header
           height: 100%;
           border-radius: 0 0 20px 0;
           &:hover
-        { 
-          animation: heart 0.3s ease-in-out ;                
-          color: $color-primary;        
-          text-shadow: none;         
-        }            
+          { 
+            animation: heart 2s ease-in-out;                
+            color: $color-primary;        
+            text-shadow: none;         
+          }            
         }     
       }
     }    

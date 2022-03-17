@@ -13,12 +13,11 @@ body
 {  
   z-index: 5;
   transform: translateZ(1px);
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  opacity: 0.8;  
+  position: fixed;    
   @include flexcentercenter;
-  background-color: $color-loader;
+  background-color: $color-li;
+  width: 100%;
+  height: 100%;
   animation: loader 2s forwards;
   &__anim
     {      
@@ -158,6 +157,10 @@ h1
     &:active
     {      
       background-color: $color-choice;
+      .choice__color
+      {
+        background-color: $color-choice;
+      }
             
     }
     @media (min-width:992px){
@@ -167,7 +170,7 @@ h1
       height: 75px;
       &:hover
       {      
-        background-color: $color-choice;      
+        background-color: $color-choice;
       }
     }   
       &__number
@@ -344,10 +347,12 @@ h1
       height: 60px;      
       color: $color-li;
       text-shadow: 0px 0px 0px $color-link;
+      transform: scale(1);
       &:active
       {        
         color: $color-primary;         
         text-shadow: none;
+        animation: heart 2s ease-in-out ;
       }            
       @media (min-width:992px){
         height: 100%;
@@ -356,6 +361,7 @@ h1
         {        
           color: $color-primary;         
           text-shadow: none;
+          animation: heart 2s ease-in-out ;
         } 
       }     
     }  
