@@ -731,8 +731,8 @@ h1 #logo {
 #restaurant .visual .fa-heart:active {
   color: #9356DC;
   text-shadow: none;
-  -webkit-animation: heart 2s ease-in-out;
-          animation: heart 2s ease-in-out;
+  -webkit-animation: heart 2s ease-in-out backwards;
+          animation: heart 2s ease-in-out backwards;
 }
 
 @media (min-width: 992px) {
@@ -743,8 +743,8 @@ h1 #logo {
   #restaurant .visual .fa-heart:hover {
     color: #9356DC;
     text-shadow: none;
-    -webkit-animation: heart 2s ease-in-out;
-            animation: heart 2s ease-in-out;
+    -webkit-animation: heart 2s ease-in-out backwards;
+            animation: heart 2s ease-in-out backwards;
   }
 }
 
