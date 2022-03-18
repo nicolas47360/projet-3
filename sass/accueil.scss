@@ -156,16 +156,10 @@ h1
     @include box($color-text);
     &:active
     {      
-      background-color: $color-choice;
-      .choice__color
-      {
-        background-color: $color-choice;
-      }
-            
+      background-color: $color-choice;          
     }
     @media (min-width:992px){
-      margin: 10px 20px 10px 20px;
-      justify-content: none;        
+      margin: 10px 20px 10px 20px;             
       width: 30%;     
       height: 75px;
       &:hover

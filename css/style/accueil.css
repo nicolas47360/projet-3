@@ -428,16 +428,9 @@ h1 #logo {
   background-color: #f6d8ee;
 }
 
-#function .choice:active .choice__color {
-  background-color: #f6d8ee;
-}
-
 @media (min-width: 992px) {
   #function .choice {
     margin: 10px 20px 10px 20px;
-    -webkit-box-pack: none;
-        -ms-flex-pack: none;
-            justify-content: none;
     width: 30%;
     height: 75px;
   }
