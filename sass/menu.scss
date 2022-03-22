@@ -118,8 +118,7 @@ header
         width: 80px;
         height: 60px;      
         color: $background;
-        text-shadow: 0px 0px 0px $color-link;        
-       
+        text-shadow: 0px 0px 0px $color-link;       
         transition: all 0.2s ease-in-out;       
         @media (min-width:992px){
           font-size: 45px;
@@ -195,7 +194,6 @@ header
           width: 45px;
           height: 2px;
           margin-left:20px;
-
         }
         .food
         {
@@ -207,17 +205,25 @@ header
           font-size: 14px;          
           animation: slider 0.4s ease-in-out backwards;
           overflow: hidden;
-          &:hover .pay__link
+          &:active .pay__link
           {
             margin-right: 0px;
           }
-          &:hover .fa-check
+          &:active .fa-check
           {              
             transform: rotate(360deg);                  
           }                               
           @media (min-width:992px) {
             margin: 15px 20px 0 20px;
-            font-size: 16px;          
+            font-size: 16px;
+            &:hover .pay__link
+            {
+              margin-right: 0px;
+            }
+            &:hover .fa-check
+            {              
+              transform: rotate(360deg);                  
+            }                                        
           }      
           .menu1     
           {            

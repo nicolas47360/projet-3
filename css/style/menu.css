@@ -464,11 +464,11 @@ header h1 #header__logo {
   overflow: hidden;
 }
 
-#presentation .card__style .food:hover .pay__link {
+#presentation .card__style .food:active .pay__link {
   margin-right: 0px;
 }
 
-#presentation .card__style .food:hover .fa-check {
+#presentation .card__style .food:active .fa-check {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
@@ -477,6 +477,13 @@ header h1 #header__logo {
   #presentation .card__style .food {
     margin: 15px 20px 0 20px;
     font-size: 16px;
+  }
+  #presentation .card__style .food:hover .pay__link {
+    margin-right: 0px;
+  }
+  #presentation .card__style .food:hover .fa-check {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
