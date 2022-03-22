@@ -2,7 +2,7 @@
 @import "./utils/_variables" ;
 @import "./utils/_keyframes";
 
-body, p
+body
 {
   margin:0;
   font-family: 'Roboto', sans-serif;
@@ -240,6 +240,11 @@ header
             @include menu;
             animation: 0.6s ease-in-out 0.4s menu;        
           }
+          .menu4
+          {
+            @include menu;
+            animation: 0.6s ease-in-out 0.6s menu;
+          }
           .pay
           {
             @include flexcentercenter;         
@@ -283,6 +288,10 @@ header
     width: 100%;
     background-color: #ECE9F9;
     @include flexcentercenter;
+    @media (min-width:992px){
+      margin-top: 40px;
+    }
+    
     button
     {
      @include button(40px, 200px, 25px, 40px);      

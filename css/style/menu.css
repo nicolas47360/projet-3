@@ -136,7 +136,7 @@
   }
 }
 
-body, p {
+body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
@@ -233,7 +233,7 @@ header h1 #header__logo {
 
 @media (min-width: 992px) {
   #presentation {
-    background-color: #ECE9F9;
+    background-color: #f6f6f6;
   }
 }
 
@@ -291,7 +291,7 @@ header h1 #header__logo {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #ECE9F9;
+  background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
   margin-top: -35px;
 }
@@ -333,7 +333,7 @@ header h1 #header__logo {
           justify-content: center;
   width: 80px;
   height: 60px;
-  color: #ECE9F9;
+  color: #f6f6f6;
   text-shadow: 0px 0px 0px black;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -398,7 +398,7 @@ header h1 #header__logo {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  background-color: #ECE9F9;
+  background-color: #f6f6f6;
 }
 
 @media (min-width: 992px) {
@@ -442,7 +442,7 @@ header h1 #header__logo {
 }
 
 #presentation .card__style .under-title {
-  background-color: #b0e7b0;
+  background-color: #99e2d0;
   width: 45px;
   height: 2px;
   margin-left: 20px;
@@ -491,18 +491,20 @@ header h1 #header__logo {
   font-size: 14px;
   margin: 0 0 0 10px;
   overflow: hidden;
+  font-size: 18px;
   -webkit-animation: 0.6s ease-in-out menu;
           animation: 0.6s ease-in-out menu;
 }
 
-#presentation .card__style .food .menu1 h3 {
+#presentation .card__style .food .menu1 .food__title {
   margin: 15px 0 0 0;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  font-weight: bold;
 }
 
-#presentation .card__style .food .menu1 p {
+#presentation .card__style .food .menu1 .food__text {
   margin: 8px 0 15px 0;
   color: grey;
   text-overflow: ellipsis;
@@ -514,18 +516,20 @@ header h1 #header__logo {
   font-size: 14px;
   margin: 0 0 0 10px;
   overflow: hidden;
+  font-size: 18px;
   -webkit-animation: 0.6s ease-in-out 0.2s menu;
           animation: 0.6s ease-in-out 0.2s menu;
 }
 
-#presentation .card__style .food .menu2 h3 {
+#presentation .card__style .food .menu2 .food__title {
   margin: 15px 0 0 0;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  font-weight: bold;
 }
 
-#presentation .card__style .food .menu2 p {
+#presentation .card__style .food .menu2 .food__text {
   margin: 8px 0 15px 0;
   color: grey;
   text-overflow: ellipsis;
@@ -537,18 +541,45 @@ header h1 #header__logo {
   font-size: 14px;
   margin: 0 0 0 10px;
   overflow: hidden;
+  font-size: 18px;
   -webkit-animation: 0.6s ease-in-out 0.4s menu;
           animation: 0.6s ease-in-out 0.4s menu;
 }
 
-#presentation .card__style .food .menu3 h3 {
+#presentation .card__style .food .menu3 .food__title {
   margin: 15px 0 0 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+#presentation .card__style .food .menu3 .food__text {
+  margin: 8px 0 15px 0;
+  color: grey;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
-#presentation .card__style .food .menu3 p {
+#presentation .card__style .food .menu4 {
+  font-size: 14px;
+  margin: 0 0 0 10px;
+  overflow: hidden;
+  font-size: 18px;
+  -webkit-animation: 0.6s ease-in-out 0.6s menu;
+          animation: 0.6s ease-in-out 0.6s menu;
+}
+
+#presentation .card__style .food .menu4 .food__title {
+  margin: 15px 0 0 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+#presentation .card__style .food .menu4 .food__text {
   margin: 8px 0 15px 0;
   color: grey;
   text-overflow: ellipsis;
@@ -574,7 +605,7 @@ header h1 #header__logo {
 }
 
 #presentation .card__style .food .pay__link {
-  background-color: #b0e7b0;
+  background-color: #99e2d0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -605,7 +636,7 @@ header h1 #header__logo {
   width: 50px;
   font-size: 15px;
   font-weight: bold;
-  color: #b0e7b0;
+  color: #99e2d0;
   background-color: white;
   border-radius: 40px;
   height: 30px;
@@ -627,6 +658,12 @@ header h1 #header__logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (min-width: 992px) {
+  #presentation #selection {
+    margin-top: 40px;
+  }
 }
 
 #presentation #selection button {
@@ -682,7 +719,7 @@ header h1 #header__logo {
 
 /* footer */
 footer {
-  background-color: #3b3b3b;
+  background-color: #323232;
   margin: 0;
 }
 

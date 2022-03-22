@@ -216,7 +216,7 @@ h1 #logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #cccccc;
+  background-color: #ebebeb;
 }
 
 @media (min-width: 992px) {
@@ -272,7 +272,7 @@ h1 #logo {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 40px 0 40px;
-  background-color: #ECE9F9;
+  background-color: #f6f6f6;
 }
 
 @media (min-width: 992px) {
@@ -411,7 +411,7 @@ h1 #logo {
   -webkit-box-shadow: 5px 5px 5px grey;
           box-shadow: 5px 5px 5px grey;
   cursor: pointer;
-  background: #ECE9F9;
+  background: #f6f6f6;
   color: black;
   margin: 10px 40px 20px 40px;
   display: -webkit-box;
@@ -581,7 +581,7 @@ h1 #logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #ECE9F9;
+  background-color: #f6f6f6;
   margin: 60px 0 0 0;
   padding: 0 0 70px 0;
 }
@@ -748,7 +748,7 @@ h1 #logo {
 
 /* footer */
 footer {
-  background-color: #3b3b3b;
+  background-color: #323232;
   margin: 0;
 }
 

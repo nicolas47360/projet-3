@@ -57,21 +57,23 @@
 @mixin menu {    
     font-size: 14px;
     margin: 0 0 0 10px;
-    overflow: hidden;    
-    h3
-    {
-    margin: 15px 0 0 0;
-    text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;        
+    font-size: 18px;    
+    .food__title
+    {
+        margin: 15px 0 0 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        font-weight: bold;        
     }    
-    p
+    .food__text
     {
-    margin: 8px 0 15px 0;
-    color: $color-text;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;        
+        margin: 8px 0 15px 0;
+        color: $color-text;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;        
     } 
 }
 
