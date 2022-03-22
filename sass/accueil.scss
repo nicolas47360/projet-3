@@ -89,18 +89,21 @@ h1
     height: 350px;
     margin-bottom: 80px;        
   }   
-  h2
+  &__title
   {      
-    margin: 40px 10px 10px 10px;      
+    margin: 40px 10px 10px 10px;
+    font-weight: bold;      
     text-align: center;
+    font-size: 25px;
     @media (min-width: 992px) {        
       margin: 20px 10px 10px 10px;        
       font-size: 35px;        
     }
   }
-  p
+  &__text
   {
     text-align: center;
+    font-size: 21px;
     margin: 5px 10px 20px 10px;
     @media (min-width: 992px) {                
       font-size: 35px;
@@ -268,6 +271,7 @@ h1
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
+      
     }
   }    
   .visual
@@ -317,25 +321,26 @@ h1
       display: flex;  
       flex-direction: column;
       margin: 0 0 0 20px;
-      h3
+      font-size: 20px;
+      .visual__title
       {
         margin: 20px 0 0 0;
+        font-weight: bold;        
         @media (min-width:992px){
           font-size: 25px;
         }
-      }  
-      p
+      }     
+      .visual__location
       {
         margin: 5px 0 20px 0;
         @media (min-width:992px){
           font-size: 25px;
         }
-      }
-    
+      }   
     }         
     .fa-heart
     {
-      font-size: 25px;
+      font-size: 35px;
       @include flexcentercenter;
       width: 80px;
       height: 60px;      

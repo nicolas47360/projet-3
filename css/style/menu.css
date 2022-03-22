@@ -1,22 +1,30 @@
-@-webkit-keyframes menu {
+@-webkit-keyframes loader {
   from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  to {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
 }
 
-@keyframes menu {
+@keyframes loader {
   from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  to {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
 }
 
@@ -70,33 +78,25 @@
   }
 }
 
-@-webkit-keyframes loader {
+@-webkit-keyframes menu {
   from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  80% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  to {
     -webkit-transform: scale(0);
             transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
-@keyframes loader {
+@keyframes menu {
   from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  80% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  to {
     -webkit-transform: scale(0);
             transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -136,7 +136,7 @@
   }
 }
 
-body {
+body, p {
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }

@@ -1,22 +1,30 @@
-@-webkit-keyframes menu {
+@-webkit-keyframes loader {
   from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  to {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
 }
 
-@keyframes menu {
+@keyframes loader {
   from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  to {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
 }
 
@@ -70,33 +78,25 @@
   }
 }
 
-@-webkit-keyframes loader {
+@-webkit-keyframes menu {
   from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  80% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  to {
     -webkit-transform: scale(0);
             transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
-@keyframes loader {
+@keyframes menu {
   from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  80% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  to {
     -webkit-transform: scale(0);
             transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -282,25 +282,28 @@ h1 #logo {
   }
 }
 
-#reserve h2 {
+#reserve__title {
   margin: 40px 10px 10px 10px;
+  font-weight: bold;
   text-align: center;
+  font-size: 25px;
 }
 
 @media (min-width: 992px) {
-  #reserve h2 {
+  #reserve__title {
     margin: 20px 10px 10px 10px;
     font-size: 35px;
   }
 }
 
-#reserve p {
+#reserve__text {
   text-align: center;
+  font-size: 21px;
   margin: 5px 10px 20px 10px;
 }
 
 @media (min-width: 992px) {
-  #reserve p {
+  #reserve__text {
     font-size: 35px;
   }
 }
@@ -680,30 +683,32 @@ h1 #logo {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 0 0 20px;
+  font-size: 20px;
 }
 
-#restaurant .visual__detail h3 {
+#restaurant .visual__detail .visual__title {
   margin: 20px 0 0 0;
+  font-weight: bold;
 }
 
 @media (min-width: 992px) {
-  #restaurant .visual__detail h3 {
+  #restaurant .visual__detail .visual__title {
     font-size: 25px;
   }
 }
 
-#restaurant .visual__detail p {
+#restaurant .visual__detail .visual__location {
   margin: 5px 0 20px 0;
 }
 
 @media (min-width: 992px) {
-  #restaurant .visual__detail p {
+  #restaurant .visual__detail .visual__location {
     font-size: 25px;
   }
 }
 
 #restaurant .visual .fa-heart {
-  font-size: 25px;
+  font-size: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
