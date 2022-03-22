@@ -286,7 +286,7 @@ header
   #selection
   {
     width: 100%;
-    background-color: #ECE9F9;
+    background-color: $background;
     @include flexcentercenter;
     @media (min-width:992px){
       margin-top: 40px;
