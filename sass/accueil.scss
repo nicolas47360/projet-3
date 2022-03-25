@@ -338,32 +338,52 @@ h1
         }
       }   
     }         
-    .fa-heart
+    .heart
     {
-      font-size: 35px;
-      @include flexcentercenter;
-      width: 80px;
-      height: 60px;      
-      color: $color-li;
-      text-shadow: 0px 0px 0px $color-link;
-      transform: scale(1);
-      &:active
-      {        
-        color: $color-primary;         
-        text-shadow: none;
-        animation: heart 1s ease-in-out backwards;
-      }            
-      @media (min-width:992px){
-        height: 100%;
-        border-radius: 0 0 20px 0;
+      margin-right: 40px;
+      &__full
+      {
+        font-size: 25px;             
+        color: transparent;
+        background-image: $background-button;                     
+        transition: all 0.6s ease-in-out;   
+        position: absolute;        
+        -webkit-background-clip: text;       
+        background-clip: text;
+        transform-origin: bottom;
+        opacity: 0;
+        z-index: 1;
+        margin-top: 20px;
+        cursor: pointer;
+        @media (min-width:992px)
+        {
+          font-size: 35px;
+        }
         &:hover
-        {        
-          color: $color-primary;         
-          text-shadow: none;
-          animation: heart 1s ease-in-out backwards;
-        } 
-      }     
-    }  
+          {               
+            opacity: 1;                                     
+          }
+      }
+      &__empty
+      {     
+        font-size: 25px;                
+        transition: all 0.6 ease-in-out;           
+        top: 20px;
+        right: 0;       
+        cursor: pointer;
+        position: relative;
+        color: $color-text;
+        @media (min-width:992px)
+        {
+          font-size: 35px;
+          &:hover
+        {
+          animation: empty 0.6 ease-in-out;         
+        }        
+        }        
+        
+      }      
+    }
   }
 }
 
