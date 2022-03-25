@@ -376,12 +376,11 @@ h1
         @media (min-width:992px)
         {
           font-size: 35px;
-          &:hover
+        }
+        &:hover
         {
           animation: empty 0.6 ease-in-out;         
-        }        
-        }        
-        
+        }                 
       }      
     }
   }

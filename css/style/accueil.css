@@ -761,10 +761,11 @@ h1 #logo {
   #restaurant .visual .heart__empty {
     font-size: 35px;
   }
-  #restaurant .visual .heart__empty:hover {
-    -webkit-animation: empty 0.6 ease-in-out;
-            animation: empty 0.6 ease-in-out;
-  }
+}
+
+#restaurant .visual .heart__empty:hover {
+  -webkit-animation: empty 0.6 ease-in-out;
+          animation: empty 0.6 ease-in-out;
 }
 
 /* footer */
